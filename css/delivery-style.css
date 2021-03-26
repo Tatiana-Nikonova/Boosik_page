@@ -1,0 +1,127 @@
+.page-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-container {
+    position: relative;
+    
+}
+
+.main-content {
+	padding-top: 15px;
+	padding-bottom: 64px;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.link {
+	-webkit-appearance:none; 
+	color: #4F4F4F;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 132%;
+	text-align: left;
+}
+
+
+.description {
+
+	width: 195px;
+	height: 60px;
+	margin-top: 70px;
+	margin-bottom: 49px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 144%;
+	color: #1F1F1F;
+}
+
+.boosik-header {
+	margin-bottom: 28px;
+}
+
+
+.boosik-header , .restaurant-header {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 144%;
+	color: #1F1F1F;
+}
+
+
+.boosik-description {
+	margin-bottom: 47px;
+}
+
+
+
+.boosik-description, .restaurant-description {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 144%;
+	width: 1170px;
+	height: 140px;
+	letter-spacing: -0.01em;
+	color: #1F1F1F;
+}
+
+.restaurant-header {
+	margin-bottom: 28px;
+}
+
+
+
+.deliver-img::before {
+	content: "";
+	display: inline-block;
+	width: 53px;
+	height: 73px;
+	padding-left: 53px;
+	background-image: url('../images/icon/courier.svg'); 
+	background-repeat: no-repeat;
+	background-size: cover; 
+	vertical-align: middle; 
+	margin-right: 30px;
+}
+.car-img::before {
+	content: "";
+	display: inline-block;
+	width: 107px;
+	height: 50px;
+	padding-left: 107px;
+	background-image: url('../images/icon/Layer.svg'); 
+	background-repeat: no-repeat;
+	background-size: cover; 
+	vertical-align: bottom; 
+	margin-right: 23px;
+}
+.own-delivery , .boosik-sence {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-networks {
+	padding-right: 10px;
+	padding-top: 6px;
+}
+
+.e-store{
+	padding-bottom: 10px;
+}
+.footer-town-store {
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+}
