@@ -787,6 +787,12 @@ address {
 	width: 15px;
 }
 
+.banner-but {
+	width: 144.07px;
+	height: 47px;
+	margin-top: -25px;
+}
+
 .copyright {
 	display: flex;
 	justify-content: center;
