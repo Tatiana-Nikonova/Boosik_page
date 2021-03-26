@@ -19,12 +19,12 @@ $(document).ready(function() {
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
-	window.addEventListener('scroll', animOnScholl);
+	window.addEventListener('scroll', animOnScroll);
 	function animOnScroll(params) {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
 			const animItemHeight = animItem.offsetHeight;
-			const animItemHeightOffset = offset(animItem).top;
+			const animItemOffset = offset(animItem).top;
 			const animStart = 4;
 
 			let animItemPoint = window.innerHeight - animItemHeight / animStart;
@@ -32,8 +32,9 @@ if (animItems.length > 0) {
 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
 			}
 
-			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
 				animItem.classList.add('_active');
+			
 			} else {
 				animItem.classList.remove('_active');
 			}
