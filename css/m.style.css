@@ -1,0 +1,206 @@
+.header {
+	max-width: 310px;
+}
+.menu-burger {
+	width: 19px;
+	height: 10px;
+}
+
+.header-flex {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #000;
+}
+.category-container {
+ 
+}
+
+.main {
+	width: 330px;	
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;  
+}
+
+.banner {
+	max-width: 310px;
+	margin: 0;
+	padding: 0;
+}
+.banner__category {
+   padding: 9px 11px 0;
+}
+.banner__category a {	
+	font-size: 6px;	
+}
+.category__boosik {
+margin-right: 4px;
+}
+.category__boosik::after {
+	top: 8px;
+   left: 19px;
+	width: 1px;
+	height: 1px;
+	
+}
+.main-title {	
+	width: 158px;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 11px 100px 36px 9px;
+	line-height: 20.16px; 
+}
+.search-container{	
+	margin: 15px auto 0;
+}
+.search {	
+	padding: 9px 35px 9px;
+	background: url('../images/icon/search-glass.svg') 11px 8px / 17px 17px no-repeat;
+	border-radius: 30px;
+	border: 1px solid rgba(197,197,196,0.5);
+}
+.search::-webkit-input-placeholder {color:#E3E3E3; font-size: 14px; padding-left: 43pxpx; line-height: 18.48px;}
+.search::-moz-placeholder          {color:#E3E3E3; font-size: 14px; padding-left: 43pxpx; line-height: 18.48px;}/* Firefox 19+ */
+.search:-moz-placeholder           {color:#E3E3E3; font-size: 14px; padding-left: 43pxpx; line-height: 18.48px;}/* Firefox 18- */
+.search:-ms-input-placeholder      {color:#E3E3E3; font-size: 14px; padding-left: 43pxpx; line-height: 18.48px;}
+
+.slider-container, 
+.happy-clock {
+	width: 360px;
+	height: 270px;
+	margin: 8px auto 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.slider {
+	padding: 0;
+	margin-top: 8px;		
+}
+.slider__title {
+	font-size: 18px;
+}
+.slider .slick-arrow, .category .slick-arrow,
+.slider .slick-arrow::before, .category .slick-arrow::before {
+	display: none;
+}
+.slider__item .slick-slide .slick-current .slick-active {
+	width: 242px;;
+}
+.slider-images img {
+	width: 242px;
+	height: 118px;
+}
+.slider-card {
+	width: 242px;
+}
+.category-container {
+	margin-top: 15px;
+}
+.category {
+	width: 320px;
+  	margin-top: 0;
+   padding: 0;	
+}
+
+.category .slider-cathegory__item {	
+	padding: 13px 13px;	
+	font-size: 12.19px;
+	margin-left: 8px; 
+}
+
+.restorans-container {
+	width: 360px;
+} 
+.restorans-title {
+	margin-top: 7px;
+	margin-left: 12px;
+	font-size: 18px;
+	text-align: left;
+}
+.restorans-cards {
+	margin-top: 3px;
+   padding: 5px;
+}
+.restorans-card {
+	width: 303px;
+	margin-bottom: 20px;	
+}
+
+.restorans__button {
+	width: 303px;
+	margin: 39px 0 0 0;
+	padding: 15px;
+}
+.restorans__button-text {
+	font-size: 14px;		
+}
+.delivery {
+	margin-top: 26px;
+	width: 303px;
+	margin-right: 0;
+	padding: 0 11px;
+}
+.delivery p {
+	font-size: 16px;
+	width: 298px;
+}
+
+.footer-container {
+	margin-top: 24px;
+	padding-top: 13px;
+	padding-bottom: 15px;
+}
+.footer {
+	width: 310px;	
+	padding: 0 0 0 15px;
+}
+.footer__logo {
+	margin-top: 20px;
+}
+.footer__logo img{
+	width: 105px;
+	height: 30px;
+}
+.footer-town__colomns {
+	display: block;
+	margin-top: 26px;
+}
+.footer-town__colomn {
+	padding-left: 88px;
+	padding-bottom: 48px;
+}
+.footer-tit {
+	margin-left: -88px;
+}
+.footer-town__colomn.colomn-last{
+	display: flex;
+	padding-left: 0;	
+}
+.footer-town__colomn:last-child {
+	width: 295px;
+	padding-bottom: 13px;
+	margin-left: -6px;
+}
+.footer-town img {
+	width: 144.07px;
+	height: 47px;
+	
+}
+
+.Google_play,
+.App_Store {
+	margin-top: 0;
+}
+.App_Store {
+	margin-top: -25px;
+	margin-left: 5px;
+}
+.banner-but {
+	display: flex;
+	justify-content: center;
+}
+
+.copyright {
+	padding: 24px 0;
+}

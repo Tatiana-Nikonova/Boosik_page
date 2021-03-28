@@ -18,7 +18,7 @@
 }
 
 .wrap {
-	width: 100%;
+	width: 100%;	
 	min-height: 100%;
 	display: grid;
 	grid-template: minmax(96px, auto) 1fr minmax(564px, auto) / 1fr; 
@@ -28,16 +28,23 @@
 	font-family: 'Lato', 'Arial', sans-serif;
 }
 
+
 .header-container {
 	box-shadow: 5px 5px 30px rgba(112, 112, 112, 0.1);
 }
 .header {
 	max-width: 1170px;
 	margin: 0 auto;
+	width: 100%;
 	grid-area: header;
 	padding: 27px 0 29px 0;
+	
+}
+.header-grid {
+	width: 100%;
+	padding: 0 10px;
 	display: grid;	
-	grid-template: 1fr / fit-content(141px) 1fr minmax(auto, 453px) minmax(auto, 260px) minmax(auto, 87px);
+	grid-template: 1fr / fit-content(141px) 1fr minmax(auto, 453px) minmax(auto, 50px) minmax(auto, 210px) minmax(auto, 87px);
 	align-items: center;
 }
 .header__logo {
@@ -114,8 +121,9 @@
 
 
 .header__search-adress {
-	margin-top: -4px;
-	width: 432px;	
+	max-width: 432px;	
+	min-width: 277px;
+	margin: -4px 5px;
 	border-radius: 30px;
 	border: 1px solid #5BC1CF;	
 	transition: all 0.8s ease 0s;
@@ -137,15 +145,18 @@
 :focus:-ms-input-placeholder      {color: transparent}
 
 .header__clock {	
-	margin-top: -6px;
-	margin-right: 22px;
+	margin: -6px auto 0;
+	align-items: center;
 	width: 26.58px;
 	height: 26.58px;	
+	border-radius: 30px;
+	transition: all 0.8s ease 0s;
 }
 .header__menu {
 	display: flex;	
+	margin: 0 auto;
 }
-.menu__item {
+.menu__item {	
 	padding-right: 9px;
 	border-radius: 30px;
 	transition: all 0.8s ease 0s;
@@ -159,12 +170,9 @@
 }
 
 
-.header__clock {	
-	border-radius: 30px;
-	transition: all 0.8s ease 0s;
-}
 .header__user {
 	display: flex;
+	margin: 0 auto;	
 	background-repeat: no-repeat;	
 }
 .item-user {
@@ -222,10 +230,18 @@
 	width: 1px;
 }
 
+@media (max-width: 1050px) {
+	.item-basket,
+	.num-basket {
+		display: none;
+	}
+}
+
 
 
 
 .main {
+	padding: 0 10px;
 	position: relative;
 	grid-area: main;
 	min-width: 0;
@@ -238,7 +254,7 @@
 	flex-direction: column;
 }
 .banner {
-	width: 100%;
+	max-width: 100%;
 	margin: 66px auto 0;
 	border-radius: 10px;
 	background-image: url('../images/zavtrak-iagody-kofe-dzhem-sok 1.png');
@@ -270,7 +286,7 @@
 	color: #1F1F1F;
 }
 .main-title {
-	width: 457px;
+	width: 39%;
 	margin: 49px 645px 104px 71px;
 	font-size: 42px;
 	font-weight: 700;
@@ -283,6 +299,7 @@
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
+
 .category__boosik {
 	margin-right: 13px;
 	position: relative;
@@ -324,13 +341,6 @@
 .search::-moz-placeholder          {color:#E3E3E3; font-size: 16px; padding-left: 43pxpx; line-height: 21.12px;}/* Firefox 19+ */
 .search:-moz-placeholder           {color:#E3E3E3; font-size: 16px; padding-left: 43pxpx; line-height: 21.12px;}/* Firefox 18- */
 .search:-ms-input-placeholder      {color:#E3E3E3; font-size: 16px; padding-left: 43pxpx; line-height: 21.12px;}
-
-
-
-
-
-
-
 
 .slider-container {
 	max-width: 1170px;
@@ -437,14 +447,18 @@
 	width: 298px;
 	min-height: 243px;	
 	padding-left: 0;
-	position: relative;
+	margin-right: 39px;
+	margin-right: 15px;
+}
+@media (max-width: 992px) {
+	.slider__item {
+		max-width: 636px;
+	}
 }
 .slider-images img {
 	width: 298px;
 	height: 150px;
-	z-index: 5;
-	
-	
+	z-index: 5;	
 }
 .slider-card {
 	background-color: #fff;
@@ -542,11 +556,11 @@ address {
 }
 
 .category {
-	max-width: 764px;
-	position: relative;
-	min-width: 0;
-	padding: 0 60px;
-	margin-top: 12px;		
+	max-width: 755px;
+   position: relative;
+   min-width: 0;
+   padding: 0 69px;
+   margin-top: 12px;		
 }
 
 .category .slider-cathegory__item {	
@@ -605,11 +619,21 @@ address {
 .slider-top .slick-arrow {
 	top: 37%; 
 }
+/*@media (max-width: 992px) {
+	.slick-arrow, .category .slick-arrow {
+		display: none;
+	}
+}*/
 
 
 .restorans-container {
 	margin: 34px auto 0;
 	max-width: 1170px;
+}
+@media (max-width: 992px) {
+	.restorans-container {
+		max-width: 636px;
+	}
 }
 .restorans-title {
 	font-size: 42px;
@@ -617,6 +641,13 @@ address {
 	color: #1F1F1F;
 	text-align: left;
 }
+@media (max-width: 992px) {
+	.restorans-title {
+		text-align: center;
+	}
+}
+
+
 .restorans-cards {
 	margin-top: 28px;
 	display: flex;
@@ -624,24 +655,32 @@ address {
 	flex-wrap: wrap;
 }
 .restorans-card {
-	width: 377px;
+	max-width: 100%;
+	width: 32.2%;
 	position: relative;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
+	transition: all 0.8s ease 0s;	
 }
 .restorans-card:hover {
 	transform: scale(1.1);
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-	transition: all .4s;
+	box-shadow: 6px 6px 10px #5BC1CF;
+
+	transition: all .6s;
+}
+@media (max-width: 992px) {
+	.restorans-card {
+		width: 48%;
+	}
 }
 
 	
 
 .restorans-img {
 	position: relative;
-	width: 377px;
-	height: 184px;
+	width: 100%;
+
 }
 .restorans__card-title {
 	padding: 9px 12px 0;
@@ -683,8 +722,7 @@ address {
 	right: 0;
 	bottom: 0;
 	z-index: 5;
-	width: 377px;
-	height: 184px;
+	max-width: 100%;	
 	border-radius: 10px;
 	color: #fff;
 	font-size: 22px;
@@ -700,16 +738,23 @@ address {
 	background-color: #31BCCC;
 	margin: 42px auto 32px;
 	border-radius: 30px;
-	padding: 20px;text-align: center;
+	padding: 20px;
+	text-align: center;
 }
 .restorans__button-text {
 	font-size: 20px;
 	font-weight: 700;
 	color: #fff;	
 }
-.delivery-title {
+@media (max-width: 992px) {
+	.restorans__button {
+	max-width: 636px;
+	}
+}
+.delivery-title__link {
 	font-size: 18px;
 	line-height: 25.92px;
+	color: #000;
 }
 .delivery p {
 	font-size: 16px;
@@ -719,14 +764,17 @@ address {
 	color: #000;
 	padding-right: 14px;
 }
-.delivery a,
-.delivery span {
+.etc-link,
+.letter {
 	color: #5bc1cf;
 }
 
 
 
+
 .footer-container {
+	padding-left: 15px;
+	padding-right: 15px;
 	background: #232425;
 	grid-area: footer;
 	padding-bottom: 120px;
@@ -747,7 +795,12 @@ address {
 .footer-town__colomns {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 41px;
+	margin: 41px auto 0;
+}
+@media (max-width: 992px) {
+	.footer {
+	max-width: 770px;
+	}
 }
 .footer-town__colomn {
 	
@@ -786,11 +839,28 @@ address {
 .soc-icon {
 	width: 15px;
 }
+.w-992 {
+	display: none;
+}
 
+.width-992 .Google_play {
+	margin-top: 76px;
+}
 .banner-but {
 	width: 144.07px;
 	height: 47px;
 	margin-top: -25px;
+}
+.App_Store {
+	margin-top: 18px;
+}
+@media (max-width: 992px) {
+	.w-992 {
+	display: block;
+	}
+	.colomn-last {
+		display: none;
+	}
 }
 
 .copyright {
@@ -805,7 +875,6 @@ address {
 	font-size: 16px;
 	font-family: 'Roboto' 'Arial' sans-serif;
 }
-
 
 
 
