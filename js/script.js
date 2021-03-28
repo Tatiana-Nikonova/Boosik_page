@@ -5,14 +5,19 @@ $(document).ready(function() {
 		adaptiveHeight:true,
 		slidesToShow:3,
 		slidesToScroll:3,
+		variableWidth:true,
 		speed:1000
 	});
+	
 	$('.category').slick({
 		arrows:true,
 		slidesToShow:6,
 		slidesToScroll:1,
-		speed:1000
+		variableWidth:true,
+		speed:1000,
+		waitForAnimate:false
 	});
+	
 });
 
 // Анимация появления снизу
@@ -36,7 +41,10 @@ if (animItems.length > 0) {
 				animItem.classList.add('_active');
 			
 			} else {
-				animItem.classList.remove('_active');
+				if (!animItem.classList.contains('_anim-no-hide')) {
+					animItem.classList.remove('_active');
+				}
+				
 			}
 
 		}
@@ -48,7 +56,14 @@ if (animItems.length > 0) {
 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 	}
-	animOnScroll();
+
+
+	setTimeout(() => {
+		animOnScroll();
+	}, 300);
 }
+
+
+
 
 
