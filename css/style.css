@@ -802,9 +802,7 @@ address {
 	max-width: 770px;
 	}
 }
-.footer-town__colomn {
-	
-}
+
 .footer-town__title {
 	font-size: 18px;
 	font-weight: 500;
@@ -846,7 +844,8 @@ address {
 .width-992 .Google_play {
 	margin-top: 76px;
 }
-.banner-but {
+.banner-but,
+,banner-buts {
 	width: 144.07px;
 	height: 47px;
 	margin-top: -25px;

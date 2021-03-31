@@ -1,0 +1,242 @@
+
+.header {
+	padding: 28px 35px;
+	
+}
+
+
+
+.main-banner {
+	width: 100%;
+	
+	background: url('../images/banner-couriers.png') -48px -14px / cover no-repeat;
+}
+.main-content {
+	padding: 0 35px; 
+}
+
+.banner-restaurans {
+	padding-bottom: 240px;
+}
+.restaurants-link {
+	padding-top: 34px;
+}
+
+
+.header-title {
+	margin-top: 79px;
+}
+.header-discription {
+	width: 542px;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 5px;
+	line-height: 25.92px;
+}
+.main-buttons {
+	margin-top: 80px;	
+	padding: 0;
+	display: flex;
+}
+.main__Google_play img,
+.main__App_Store img{
+	width: 250px;
+	height: 75px;
+}
+
+.title-h2 {	
+	line-height: 60.48px;
+}
+
+.instruct-container{
+	margin-bottom: 100px;
+}
+
+.instruct {
+	max-width: 1544px;
+	margin: 54px 0 0 373px;	
+}
+
+
+.item-title {
+	margin-top: 15px;
+}
+.instruct-item img {
+	display: block;	
+}
+
+.item-discription {
+	width: 604px;
+	margin-top: 16px;
+	padding-right: 57px;
+}
+
+.item-001 {margin: 0 0 0 0;}
+.item-001 img {padding: 57px 0 0 59px;}
+
+
+.item-002 {margin: -153px 0 0 713px;}
+.item-002 img {margin-left: 100px;; width: 188px;}
+
+.item-003 {margin: -9px 0 0 0;}
+.item-003 img {padding: 57px 0 41px 125px;}
+
+.item-004 {margin: -197px 0 0 687px;}
+.item-004 img {padding: 100px 0 0 83px;}
+
+.item-005 {margin: -128px 0 0 0;}
+.item-005 img {padding: 57px 0 0 131px;}
+
+.item-006 {margin: -139px 0 0 588px;}
+.item-006 img {padding: 57px 0 0 176px;}
+
+.item-007 {margin: -94px 0 0 0;}
+.item-007 img {padding: 57px 0 0 104px;}
+
+.item-008 {margin: -155px 0 0 595px;}
+.item-008 img {padding: 57px 0 0 186px;}
+
+
+
+.begin-container {
+	/*background: url('../images/fon-112.png') 113px -248px / 89%  no-repeat;*/
+}
+.begin {
+	max-width: 1230px;
+	margin-left: 374px;
+}
+.begin-items {
+	margin: 30px 0 0 49px;
+	
+}
+.begin__title {
+	padding-top: 80px;
+   margin-left: 0;
+}
+.begin-item {
+	width: 613px;
+	padding-right: 0;
+}
+.begin-title {
+	width: 435px;
+	margin-right: 0;
+}
+.item-0002 {margin: 27px 0 0 664px;}
+.item-0003 {margin: -11px 0 0 0;}
+.item-0004 {margin: 83px 0 0 665px;}
+.item-0005 {margin: 30px 0 0-76px 0;}
+
+
+
+.banner-work {
+	margin-top: 85px;
+	background: url('../images/banner-couriers-blue.png') center / cover no-repeat;
+	max-width: 1920px;
+	min-height:935px;
+}
+
+.banner-work__title {	
+	padding-top: 90px;	
+}
+.main-buttons-white {
+	margin: 653px 0 0 377px;
+}
+
+.Google_play-white {
+	margin-right: 10px;
+}
+
+.questions-container {
+	
+}
+.questions {	
+	margin: 0 auto;
+	
+}
+
+.questions__title {
+	padding-top: 62px;
+}
+.block {
+	margin-top: 57px;
+   margin-left: -26px;
+}
+.block__item {
+	margin-bottom: 20px;
+}
+.block__item:nth-child(n+2) {
+	margin-top: 34px;
+}
+.block__item:last-child {
+	margin-bottom: 0;
+	padding-bottom: 7px;
+}
+.block__title {	
+	padding-left: 30px;
+	
+}
+
+.block__title::before,
+.block__title::after {
+	content: "";
+	width: 30px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 21px;
+	transition: all 0.3s ease 0s;
+}
+.block__title:before {
+	transform: rotate(40deg);
+	right: -55px;
+}
+.block__title:after {
+	transform: rotate(-40deg);
+	right: -79px;
+}
+.block__title.active::before,
+.block__title.active::after {
+	background-color: #5BC1CF;
+}
+.block__title.active::before {
+	transform: rotate(-40deg);
+}
+.block__title.active::after {
+	transform: rotate(40deg);
+}
+
+
+
+
+.block__text {
+	margin-top: 26px;
+   padding: 0 2px 0 0;
+}
+.questions-spoiler {}
+
+
+
+.footer-container {
+	background-color: #fff;
+}
+
+
+.footer {
+	max-width: 1920px;
+	display: block;
+	margin: 0 auto;
+	color: #C5C5C4;
+	font-size: 24px;
+	text-align: center;
+	line-height: 34.56px;
+	padding: 23px 0 27px 0;
+}
+
+
+ span {
+	display: block;
+}
+.footer a {
+	color: #C5C5C4;
+	font-size: 24px;
+}

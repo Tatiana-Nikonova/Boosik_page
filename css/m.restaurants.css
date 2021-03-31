@@ -22,7 +22,7 @@
 }
 
 .wrap {
-	max-width: 1920px;	
+	max-width: 768px;	
 	margin: 0 auto;
 	min-height: 100%;	
 	display: flex;
@@ -32,20 +32,22 @@
 }
 
 .header-container {
-	height: 96px; 
+	height:75px; 
 }
 .header {
-	max-width: 1240px;
-	margin: 0 auto;
-	padding: 28px 35px;
+	max-width: 328px;
+	margin: -6px auto 0;
+	padding: 30px 0 21px 7px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	
 }
 .header__logo img {
-	width: 141px;
-	height: 40px;
+	width: 81px;
+	height: 23px;
 }
+
 
 .button {
 	background-color: #5BC1CF;
@@ -53,30 +55,30 @@
 	color: #fff;
 }
 .header-button {
-	width: 178px;
-	height: 45px;
-	font-size: 16px;
-	padding: 11px 66px;
-	line-height: 23.04px;
+	width: 113px;
+	height: 28px;
+	font-size: 10px;
+	padding: 7px 42px;
+	line-height: 14.4pxpx;
 }
 
 
 
 
 .main {
-	max-width: 1920px; 
+	max-width: 375px; 
 	margin: 0 auto;
 	
 }
 .main-banner {
 	width: 100%; 
 	margin: 0 auto;
-	background: url('../images/banner-restaurans.png') 4px -98px / cover no-repeat;
+	background-color: rgba(31, 31, 31, 0.93); 
 }
 .main-content {
 	max-width: 1240px;
 	margin: 0 auto;
-	padding: 0 35px; 
+	padding: 0 31px 164px; 
 }
 
 
@@ -84,89 +86,122 @@
 .banner-restaurans {
 	max-width: 700px;
 	color: #fff;
-	padding-bottom: 240px;
 }
 .restaurants-link {
-	padding-top: 34px;
+	padding-top: 15px;
 
 }
 .link {
 	-webkit-appearance:none;	
 	color: #fff;
 	text-align: left;	
+	font-size: 12px;
 }
 
 .header-title {
-	margin-top: 99px;
-	font-size: 42px;
-	line-height: 60.48px;	
+	margin-top: 65px;
+	width: 328px;
+	font-size: 30px;
+	line-height: 43.2px;	
 	font-weight: 700;
+
 }
 .header-discription {
-	margin-top: 11px;
+	width: 289px;
+	margin-top: 25px;
 	line-height: 19.92px;
 }
 .main-button {
-	margin-top: 80px;
-	
-	padding: 17px 74px;
-	width: 312px;
-	height: 69px;
-	font-size: 24px;
-	line-height: 34.56px;
+	margin-top: 50px;	
+	padding: 17px 48px;
+	width: 189px;
+	height: 47.81px;
+	font-size: 13.45px;
+	line-height: 19.36px;
 }
 
 .title-h2 {
 	font-weight: 700;
-	font-size: 42px;
+	font-size: 30px;
 	color: #1F1F1F;
 }
 .instruction-container {
 
 }
 .instruction,
-.features {
-	max-width: 1544px;
-	margin-top: 99px;
+.features {	
+	margin-top: 36px;
 	margin-left: auto;
 }
-
-.instruction__title {
+.features {	
+	margin-top: -77px;
 	
 }
-.instruction-grid {
+
+.instruction__title,
+.features__title {
+	margin-left: 25px;
+	line-height: 43.2px;
+
+}
+.instruction-grid,
+.features-grid {
+	max-width: 320px;
+	position: relative;
 	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-	grid-template-columns: minmax(auto,740px) minmax(auto,690px);
-	margin: 43px 0 0 53px;	
+	grid-template: repeat(5,145px) / 1fr;	
+	margin: 24px 0 0 77px;	
+}
+.features-grid {	
+	margin: 31px 0 0 77px;
+	padding-right: 30px;	
+}
+.instruction-grid::before,
+.features-grid::before {
+	content: "";
+    width: 3px;
+    height: 863px;
+    background-color: #5BC1CF;
+    position: absolute;
+    top: 24px;
+    left: -34px;
+    z-index: -4;
+}
+.features-grid::before {    
+    height: 888px;
 }
 
 .item-title {
-	font-size: 30px;
+	font-size: 18px;
 	font-weight: 600;
-	line-height: 43.2px;
+	line-height: 25.92px;
 	color: #000;
 }
 .item-discription {
-	margin-top: 16px;
-	padding-right: 57px;
-	font-size: 24px;
+	margin-top: 2px;
+	font-size: 16px;
 	color: #1F1F1F;
-	line-height: 34.56px;
+	line-height: 23.04px;
 }
 .item-discription a {
 	color: #5BC1CF;
 }
 .num {
+	width: 34px;
+	height: 34px;
 	margin-left: -50px;
    margin-right: 12px;
 }
 
+.item-02 {margin-top: 12px;}
+.item-03 {margin-top: 89px;}
+.item-04 {margin-top: 164px;}
+.item-05 {margin-top: 291px;}
 
 
 .banner-work {
-	margin-top: 145px;
-	background: url('../images/banner-blue.png') center / cover no-repeat;
+	margin-top: 273px;
+	background: url('../images/banner-blue3.png') center / contain no-repeat;
 	max-width: 1920px;
 	height: 700px;
 }
@@ -175,54 +210,37 @@
 .banner-work__title {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding-top: 96px;
+	padding: 144px 0 0 26px;
 	color: #fff;
 }
 
-.features-grid {
-	max-width: 1230px ;
-}
 
-.features__title {
-	margin-top: 95px;
-   margin-left: 377px;
-   margin-right: 0;
-}
-.features-grid {
-	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-	grid-template-columns: minmax(auto,740px) minmax(auto,690px);
-	margin: 43px 0 0 53px;
-}
 
-.features-item {
-	width: 613px;
-	padding-right: 0;
-}
-.features-title {
-	width: 435px;
-	margin-right: 0;
-}
-.item-2 {margin-top: 133px;}
-.item-3 {margin-top: -148px;}
-.item-4 {margin-top: 4px;}
-.item-5 {margin-top: -279px;}
-.item-6 {margin-top: -186px;margin-bottom: 50px;}
+.item-2 {margin-top: 10px;}
+.item-3 {margin-top: 85px;}
+.item-4 {margin-top: 162px;}
+.item-5 {margin-top: 166px;}
+.item-6 {margin-top: 179px;margin-bottom: 50px;}
+
+
+
+
 
 .questions-container {
 	background-color: #FAFAFA;
 }
 .questions {
-	max-width: 1170px;
-	margin: 65px auto 0;
+	max-width: 375px;
+	margin: 31px 0 0 26px;
 }
 
 .questions__title {
 	padding-top: 7px;
+	line-height: 43.2px;
 }
 .block {
-	margin-top:67px;
-	margin-left: 10px;
+	margin-top:13px;
+	
 }
 .block__item {
 	margin-bottom: 20px;
@@ -231,34 +249,34 @@
 	margin-top: 34px;
 }
 .block__item:last-child {
-	margin-bottom: 55px;
+	margin-bottom: 29px;
 }
 .block__title {
 	position: relative;	
-	padding-left: 30px;
+	
 	cursor: pointer;
-	font-size: 36px;
-	line-height: 51.84px;
+	font-size: 18px;
+	line-height: 25.92px;
 	color: #1F1F1F;
 }
 
 .block__title::before,
 .block__title::after {
 	content: "";
-	width: 30px;
+	width: 10px;
 	height: 1px;
 	background-color: #000;
 	position: absolute;
-	top: 21px;
+	top: 14px;
 	transition: all 0.3s ease 0s;
 }
 .block__title:before {
-	transform: rotate(40deg);
-	right: -55px;
+	transform: rotate(47deg);
+   right: 42px;
 }
 .block__title:after {
-	transform: rotate(-40deg);
-	right: -79px;
+	transform: rotate(-48deg);
+   right: 35px;
 }
 .block__title.active::before,
 .block__title.active::after {
@@ -276,11 +294,10 @@
 
 .block__text {
 	display: none;
-	margin-top: 26px;
-   padding: 0 28px;
-   max-width: 1230px;
-	font-size: 24px;
-	line-height: 34.56px;
+	width: 306px;
+	margin-top: 15px;
+   padding: 0 0 0 14px;
+	line-height: 20.16px;
 }
 .questions-spoiler {}
 
@@ -292,13 +309,11 @@
 
 
 .footer {
-	max-width: 1920px;
+	max-width: 315px;
 	display: block;
 	margin: 0 auto;
 	color: #C5C5C4;
-	font-size: 24px;
-	text-align: center;
-	line-height: 34.56px;
+	line-height: 20.16px;
 	padding: 23px 0 27px 0;
 }
 
@@ -308,5 +323,5 @@
 }
 .footer a {
 	color: #C5C5C4;
-	font-size: 24px;
+	text-align: center;
 }
