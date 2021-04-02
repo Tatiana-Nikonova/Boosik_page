@@ -16,9 +16,12 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
 .wrap {
-	width: 100%;	
+	max-width: 100%;	
 	min-height: 100%;
 	display: grid;
 	grid-template: minmax(96px, auto) 1fr minmax(564px, auto) / 1fr; 
@@ -354,7 +357,7 @@
 .slider {
 	position: relative;
 	min-width: 0;
-	padding: 0 60px;
+	padding: 0 69px;
 	margin-top: 12px;		
 }
 
@@ -458,7 +461,7 @@
 .slider-images img {
 	width: 298px;
 	height: 150px;
-	z-index: 5;	
+	
 }
 .slider-card {
 	background-color: #fff;
@@ -619,11 +622,7 @@ address {
 .slider-top .slick-arrow {
 	top: 37%; 
 }
-/*@media (max-width: 992px) {
-	.slick-arrow, .category .slick-arrow {
-		display: none;
-	}
-}*/
+
 
 
 .restorans-container {
