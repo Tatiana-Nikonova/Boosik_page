@@ -1,0 +1,459 @@
+/*Обнуление*/
+@import url(null.css);
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../Fonts/LatoBold.eot');
+	src: local('☺'), url('../Fonts/LatoBold.woff') format('woff'), url('../Fonts/LatoBold.ttf') format('truetype'), url('../Fonts/LatoBold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../Fonts/LatoRegular.eot');
+	src: local('☺'), url('../Fonts/LatoRegular.woff') format('woff'), url('../Fonts/LatoRegular.ttf') format('truetype'), url('../Fonts/LatoRegular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+.wraper {
+	width: 100%;
+}
+
+.wrap {
+	max-width: 768px;	
+	margin: 0 auto;
+	min-height: 100%;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.header-container {
+	height:75px; 
+}
+.header {
+	max-width: 768px;
+	padding: 26px 0 26px 29px;
+	margin: 0 auto;
+}
+.header__logo img {
+	width: 81px;
+	height: 23px;
+}
+.main {
+	max-width: 375px; 
+	margin: 0 auto;	
+}
+.main-content {
+	padding: 0 30px; 
+}
+.main-banner {
+	max-width: 768px;
+	min-height: 667px;	
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.main-banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 5;
+}
+.main-banner::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/banner-couriers2.png') -210px 1px / cover no-repeat;
+	z-index: 3;
+}
+@media (max-width: 641px;) {
+	.main-banner {
+		max-width: 640px;
+	}
+
+}
+@media (max-width: 461px;) {
+	.main-banner {
+		max-width: 460px;
+	}
+
+}
+@media (max-width: 376px;) {
+	.main-banner {
+		max-width: 375px;
+	}
+
+}
+@media (max-width: 640px) {
+    .main-banner::after {
+        background: url('../images/banner-couriers4.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+    }
+}
+@media (max-width: 460px) {
+    .main-banner::after {
+        background: url('../images/banner-couriers5.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+    }
+}
+@media (max-width: 376px) {
+    .main-banner::after {
+        background: url('../images/banner-couriers3.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+    }
+}
+.banner-restaurans {	
+	position: relative;
+	color: #fff;
+	z-index: 7;
+}
+
+.restaurants-link {
+	padding-top: 16px;
+}
+.link {
+	-webkit-appearance:none;	
+	color: #fff;
+	text-align: left;	
+	font-size: 12px;
+}
+
+.header-title {
+	width: 300px;
+	margin-top: 105px;
+	padding-right: 20px;
+	font-size: 24px;
+	line-height: 34.56px;	
+}
+.header-discription {
+	width: 290px;
+	margin-top: 16px;
+	line-height: 23.04px;
+}
+
+
+
+.main-buttons {
+	width: 180px;
+	margin-top: 33px;	
+}
+.main__Google_play img,
+.main__App_Store img{
+	width: 159px;
+	height: 47.7px;
+}
+.main__Google_play img {
+	margin-bottom: 10px;
+}
+.title-h2 {	
+	line-height: 43.2px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.instruct-container{
+	margin-bottom: 0px;
+}
+
+.instruct {
+	width: 375px;
+	padding-top: 20px;
+   margin: 0 auto;	
+}
+
+.instruct-items {
+	width: 255px;	
+	margin: 43px auto 0;
+	
+}
+.instruct__title {
+	padding-left: 23px;
+}
+
+.item-title {
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 25.92px;
+	text-align: left;
+}
+
+.instruct-item {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.instruct-item img {
+	max-width: 131px;	
+}
+
+.item-discript {
+	width: 290px;
+	margin-top: 16px;
+	margin-left: 0;
+	line-height: 23.04px;
+	text-align: left;	
+}
+
+
+
+
+.begin-container {
+	max-width: 375px;
+	background: url('../images/fon-112.png') 29px 74px / 95% no-repeat;
+}
+.begin {
+	
+	margin: 0 auto;
+}
+.begin-items {
+	position: relative;
+	width: 310px;
+	margin: 0 auto 0;
+	padding-bottom: 0;	
+}
+
+.begin-items::before {
+	content: "";
+   width: 3px;
+   height: 560px;
+   background-color: #5BC1CF;
+   position: absolute;
+   top: 24px;
+   left: 11px;
+   z-index: -4;
+}
+
+.begin-item {
+	width: 290px;
+	padding-right: 0;
+}
+.begin__title {
+	width: 320px;
+	padding: 11px 0 0 29px;
+	margin-right: 0;
+	font-size: 30px;
+	line-height: 43.2px;
+}
+.item-discription {
+	width: 200px;
+	margin: -9px 0 0 43px;
+	font-size: 16px;
+	color: #1F1F1F;
+	line-height: 23.04px;
+}
+.num {
+	width: 34px;
+	height: 34px;
+	margin-left: -5px;
+   margin-right: 18px;
+}
+
+.item-0002 {margin-top: 36px;}
+.item-0003 {margin-top: 45px;}
+.item-0004 {margin-top: 16px;}
+.item-0005 {margin-top: 45px;}
+
+
+.banner-work {
+	margin-top: 85px;
+	background: url('../images/banner-couriers-blue3.png') center / cover no-repeat;
+	width: 375px;
+	min-height: 498px;
+}
+
+.banner-work__title {	
+	color: #fff;
+	padding: 33px 0 0 24px;	
+}
+
+
+.questions-container {
+	background-color: #fff;
+}
+.questions {	
+	max-width: 800px;
+	margin: 0 auto;	
+}
+
+.questions__title {
+	padding: 29px 0 0 31px;
+}
+.block {
+	margin-top: 17px;
+}
+.block__item {
+	margin-bottom: 20px;
+}
+.block__item:nth-child(n+2) {
+	margin-top: 34px;
+}
+.block__item:last-child {
+	margin-bottom: 0;
+	padding-bottom: 7px;
+}
+.block__title {	
+	padding: 2px 54px 0 31px;
+	font-size: 18px;
+	line-height: 25.92px;
+	position: relative;
+}
+
+.block__title::before,
+.block__title::after {
+	content: "";
+	width: 15px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 12px;
+	transition: all 0.3s ease 0s;
+}
+.block__title:before {
+	transform: rotate(47deg);
+	right: 31px;
+}
+.block__title:after {
+	transform: rotate(-47deg);
+	right: 21px;
+}
+.block__title.active::before,
+.block__title.active::after {
+	background-color: #5BC1CF;
+}
+.block__title.active::before {
+	transform: rotate(-47deg);
+}
+.block__title.active::after {
+	transform: rotate(47deg);
+}
+
+.block__text {
+	margin: 17px 0 0 37px;
+	width: 302px;
+	font-size: 14px;
+	line-height: 20.16px;
+   padding: 0 2px 0 0;
+
+}
+
+
+.popular-queries-container,
+.specify-container {
+	background-color: #FAFAFA;
+}
+.popular-queries {
+	width: 320px;
+	margin: 0 auto;
+}
+.specify {
+	width: 320px;
+	margin: 0 auto;
+}
+.specify p {
+	width: 327px;
+	margin-top: 5px;
+	font-size: 18px;
+	line-height: 25.92px;
+	color: #000;
+}
+.popular-queries__title {
+	padding: 31px 0 0 0;
+}
+.specify__title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34.56px;
+	padding: 12px 0 0 0;
+}
+
+.popular-queries__colomns {
+	margin-top: 48px;
+	padding-bottom: 19px;
+}
+
+.specify__colomns {
+	margin-top: 27px;
+	padding-bottom: 60px;
+}
+.queries__colomn,
+.specify__colomn {
+	display: flex;
+	
+}
+.queries__item {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.specify__item {
+	width: 114px;
+	font-size: 16px;
+	line-height: 23.04px;
+	margin-bottom: 15px;
+}
+.queries__link {
+	font-size: 14px;
+
+	line-height: 20.16px;
+	color: #000;
+}
+.queries__link:hover {
+	color: #5BC1CF;
+	text-decoration: underline;
+}
+
+
+.delivery {
+	width: 320px;
+	margin: 0 auto 0;
+}
+.delivery-title {
+	padding-top: 20px;
+}
+
+.delivery-title__link {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 43.2px;
+	color: #000;
+}
+.delivery p {
+	width: 345px;
+	margin-top: 9px;
+	font-size: 16px;
+	line-height: 23.04px;
+	color: #000;
+	padding-right: 14px;
+}
+.delivery  span {
+	display: inline;
+}
+.etc-link,
+.letter {
+	color: #5bc1cf;
+}
+
+
+
+
+
