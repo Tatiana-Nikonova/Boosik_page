@@ -23,7 +23,7 @@
 }
 
 .wrap {
-	width: 375px;	
+	max-width: 768px;	
 	margin: 0 auto;
 	min-height: 100%;	
 	display: flex;
@@ -36,17 +36,23 @@
 	height:75px; 
 }
 .header {
-	max-width: 200px;
+	max-width: 375px;
 	padding: 26px 0 26px 29px;
+	margin: 0 auto;
 }
 .header__logo img {
 	width: 81px;
 	height: 23px;
 }
+.main {
+	max-width: 375px; 
+	margin: 0 auto;	
+}
 .main-content {
 	padding: 0 30px; 
 }
 .main-banner {
+	max-width: 768px;
 	min-height: 667px;	
 	margin: 0 auto;
 	position: relative;
