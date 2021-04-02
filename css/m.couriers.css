@@ -95,7 +95,7 @@
 }
 @media (max-width: 376px;) {
 	.main-banner {
-		max-width: 375px;
+		max-width: 374px;
 	}
 
 }
@@ -177,7 +177,7 @@
 }
 
 .instruct {
-	width: 375px;
+	max-width: 375px;
 	padding-top: 20px;
    margin: 0 auto;	
 }
