@@ -16,12 +16,12 @@
 	font-weight: 400;
 	font-style: normal;
 }
+html { overflow-x: hidden; }
 .wraper {
-	width: 100%;	
-}
-.wrap {
 	max-width: 100%;	
-	min-height: 100%;
+	min-height: 100%;	
+}
+.wrap {	
 	display: grid;
 	grid-template: minmax(96px, auto) 1fr minmax(564px, auto) / 1fr; 
 	grid-template-areas: "header"
