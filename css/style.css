@@ -30,17 +30,6 @@
 	font-family: 'Lato', 'Arial', sans-serif;
 }
 
-@media (max-width: 992px) {
-	.wrap {
-		padding: 15px;
-		margin: 0 auto;}
-}
-
-@media (max-width: 767px) {
-	.wrap {
-		padding: 10px;
-		margin: 0 auto;}
-}
 
 
 .header-container {
