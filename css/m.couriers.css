@@ -45,7 +45,7 @@
 	height: 23px;
 }
 .main {border: 1px solid red;
-	max-width: 375px; 
+	max-width: 480px; 
 	margin: 0 auto;	
 }
 .main-content {
@@ -177,7 +177,7 @@
 }
 
 .instruct {
-	max-width: 375px;
+	max-width: 480px;
 	padding-top: 20px;
    margin: 0 auto;	
 }
@@ -278,7 +278,7 @@
 .banner-work {
 	margin-top: 85px;
 	background: url('../images/banner-couriers-blue3.png') center / cover no-repeat;
-	width: 373px;
+	max-width: 480px;
 	min-height: 498px;
 }
 
@@ -292,7 +292,7 @@
 	background-color: #fff;
 }
 .questions {	
-	max-width: 800px;
+	max-width: 480px;
 	margin: 0 auto;	
 }
 
