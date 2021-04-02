@@ -22,7 +22,7 @@
 	width: 100%;
 }
 
-.wrap {
+.wrap {border: 1px solid #000;
 	max-width: 768px;	
 	margin: 0 auto;
 	min-height: 100%;	
@@ -44,7 +44,7 @@
 	width: 81px;
 	height: 23px;
 }
-.main {
+.main {border: 1px solid red;
 	max-width: 375px; 
 	margin: 0 auto;	
 }
@@ -219,10 +219,11 @@
 
 
 .begin-container {
+	max-width: 375px;
 	background: url('../images/fon-112.png') 29px 74px / 95% no-repeat;
 }
 .begin {
-	max-width: 375px;
+	
 	margin: 0 auto;
 }
 .begin-items {
@@ -277,7 +278,7 @@
 .banner-work {
 	margin-top: 85px;
 	background: url('../images/banner-couriers-blue3.png') center / cover no-repeat;
-	width: 375px;
+	width: 373px;
 	min-height: 498px;
 }
 
