@@ -6,7 +6,11 @@ $(document).ready(function() {
 		slidesToShow:3,
 		slidesToScroll:3,
 		variableWidth:true,
-		speed:1000
+		speed:1000,
+		waitForAnimate:false,
+		easing:'ease',
+		touchTreshhold:15,
+		centerMode:true
 	});
 	
 	$('.category').slick({
@@ -15,7 +19,9 @@ $(document).ready(function() {
 		slidesToScroll:1,
 		variableWidth:true,
 		speed:1000,
-		waitForAnimate:false
+		waitForAnimate:false,
+		easing:'ease',
+		touchTreshhold:10
 	});
 	
 });

@@ -3,16 +3,22 @@ $(document).ready(function() {
 	$('.slider').slick({
 		arrows:true,
 		adaptiveHeight:true,
+		slidesToShow:3,
 		variableWidth:true,
-		speed:1000,
-		waitForAnimate:false
+		speed:300,
+		waitForAnimate:false,
+		easing:'ease',
+		touchTreshhold:10
 	});
 	
 	$('.category').slick({
 		arrows:true,
+		slidesToShow:6,
 		variableWidth:true,
-		speed:1000,
-		waitForAnimate:false
+		speed:300,
+		waitForAnimate:false,
+		easing:'ease',
+		touchTreshhold:10
 	});
 	
 });
