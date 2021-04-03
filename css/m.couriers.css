@@ -22,7 +22,7 @@
 	width: 100%;
 }
 
-.wrap {border: 1px solid #000;
+.wrap {
 	max-width: 768px;	
 	margin: 0 auto;
 	min-height: 100%;	
@@ -40,11 +40,14 @@
 	padding: 26px 0 26px 29px;
 	margin: 0 auto;
 }
-.header__logo img {
+.header-logo {
 	width: 81px;
 	height: 23px;
 }
-.main {border: 1px solid red;
+.logo-image {
+	max-width: 100%;
+}
+.main {
 	max-width: 480px; 
 	margin: 0 auto;	
 }
@@ -276,15 +279,15 @@
 
 
 .banner-work {
-	margin-top: 85px;
-	background: url('../images/banner-couriers-blue3.png') center / cover no-repeat;
-	max-width: 480px;
-	min-height: 498px;
+	margin-top: 17px;
+    background: url(../images/banner-couriers-blue.png) center / 146% no-repeat;
+    max-width: 480px;
+    min-height: 379px;
 }
 
 .banner-work__title {	
 	color: #fff;
-	padding: 33px 0 0 24px;	
+	padding: 31px 0 0 24px;	
 }
 
 
