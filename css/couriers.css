@@ -3,20 +3,31 @@
 	padding: 28px 35px;
 	
 }
-
-
-
 .main-banner {
+	position: relative;
+	max-width: 100%;	
+	min-height: 700px;
+	background: url('../images/banner-couriers.png') 0 0 / cover no-repeat;
+}
+.main-banner::before {
+	content: "";
+	position: absolute;
 	width: 100%;
-	
-	background: url('../images/banner-couriers.png') -48px -14px / cover no-repeat;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 2;
 }
 .main-content {
 	padding: 0 35px; 
 }
 
 .banner-restaurans {
-	padding-bottom: 240px;
+	padding-bottom: 200px;
+	position: relative;
+	z-index: 5;
 }
 .restaurants-link {
 	padding-top: 34px;
