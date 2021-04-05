@@ -80,5 +80,53 @@ $(document).ready(function() {
 });
 
 
+// Меню-бургер
+$(document).ready(function() {
+	$('.menu-burger').click(function(event) {
+		$('.menu-burger,.header__menu').toggleClass('active');
+		$('.body').toggleClass('lock');
+	});
+});
+
+
+
+// Изменение шапки при скролле
+$(window).on("scroll", function () {
+    var scrolled = $(this).scrollTop();
+    if( scrolled > 60 ) {
+        $('.content,.header-scroll').addClass('scrolled');
+
+    }   
+    if( scrolled <= 60 ) {     
+        $('.content,.header-scroll').removeClass('scrolled');
+    }
+});
+
+
+$('li.dropdown').click(function() {
+    $(this).nextUntil('li.dropdown').slideToggle('slow');
+});
+
+
+
+
+
+
+ // скрытие текста
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Читать больше"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Читать меньше"; 
+    moreText.style.display = "inline";
+  }
+}     // скрытие текста - end
 
 

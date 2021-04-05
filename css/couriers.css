@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 }
-.wrap {border: 1px solid green;
+.wrap {
 	min-width: 1025px;
 	margin: 0 auto;	
 }

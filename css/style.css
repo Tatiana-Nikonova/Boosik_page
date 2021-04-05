@@ -1,6 +1,15 @@
 /*Обнуление*/
 @import url(null.css);
 
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
 @font-face {
 	font-family: 'Lato';
 	src: url('../Fonts/LatoBold.eot');
@@ -136,6 +145,7 @@ html { overflow-x: hidden; }
 	padding: 16px 17px 10px 32px;
 	background: url('../images/icon/point.svg') 16px center / 14px 18px no-repeat;
 }
+
 
 .search-adress::-webkit-input-placeholder {color:#5BC1CF; font-size: 18px; padding-left: 1px; line-height: 28px;}
 .search-adress::-moz-placeholder          {color:#5BC1CF; font-size: 18px; padding-left: 1px; line-height: 28px;}/* Firefox 19+ */
@@ -763,9 +773,14 @@ address {
 	color: #000;
 	padding-right: 14px;
 }
+#more {display: none;} /*скрытие текста*/
+
 .etc-link,
 .letter {
 	color: #5bc1cf;
+}
+.etc-link {
+	background-color: #fff;
 }
 
 
