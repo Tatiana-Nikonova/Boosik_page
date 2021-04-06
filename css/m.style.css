@@ -36,7 +36,7 @@
 .header-scroll .header-flex {
 	display: flex;
 	justify-content: space-around;
-	padding: 30px 23px;
+	padding: 30px 0;
 }
 .header-scroll.scrolled {
 	display: block;
@@ -142,7 +142,7 @@
 .menu-burger.active::after {
 	content: "";
 	transform: rotate(-45deg);
-	bottom: 6px;
+	bottom: 8px;
 }
 .menu-burger.active span {
 	transform: scale(0);
@@ -199,8 +199,6 @@
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
 	position: relative;
 	top: 2px;
-	transform: scale(1.1);
-	transition: transform .4s;
 }
 .header__clock {
 	margin: 0;
@@ -216,7 +214,7 @@
 	margin: 30px 0;
 }
 .category._sliderSmall {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 .category .slick-arrow {
@@ -298,14 +296,14 @@
 
 .main {
 	max-width: 768px;	
-	padding: 0 20px;
+	padding: 0;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;  
 }
 
 .banner {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -313,7 +311,7 @@
    padding: 9px 11px 0;
 }
 .banner__category a {	
-	font-size: 6px;	
+	font-size: 10px;	
 }
 .category__boosik {
 	margin-right: 4px;
@@ -327,7 +325,7 @@
 }
 .main-title {	
 	width: 158px;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 700;
 	margin: 11px 100px 36px 9px;
 	line-height: 20.16px; 
@@ -364,6 +362,7 @@
 }
 .slider__title {
 	font-size: 18px;
+	padding-top: 0;
 }
 .slider .slick-arrow, .category .slick-arrow,
 .slider .slick-arrow::before, .category .slick-arrow::before {
@@ -380,13 +379,29 @@
 .slider-card img {	
 	max-width: 100%;	
 }
-.distance {
-    position: absolute;
-    right: 4px;
-    top: 131px;
+.card-title {
+	position: relative;
+}
+.restorans__card-title::after {
+	content: "10 км";
+	position: absolute;
+    top: 9px;
+    right: 16px;
     z-index: 4;
     color: #5BC1CF;
- }
+    font-weight: 400;
+    font-size: 18px;
+}
+.slider__card-title::after {
+	content: "10 км";
+	position: absolute;
+    top: 1px;
+    right: 16px;
+    z-index: 4;
+    color: #5BC1CF;
+    font-weight: 400;
+    font-size: 18px;
+}
 
 .category-container {
 	margin-top: 15px;
@@ -412,12 +427,12 @@
 }
 
 .restorans-container {
-	max-width: 650px;
+	width: 100%;
 	margin: 0 auto;
 } 
 .restorans-title {
 	width: 80%;
-	margin: 30px 12px 20px 12px;
+	margin: 0 12px 20px 12px;
 	font-size: 18px;
 	text-align: left;
 }
@@ -425,13 +440,14 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	margin-top: 3px;
-   padding: 5px;
+   padding: 1px;
 }
 .restorans-card {
-	min-height: 303px;
 	margin-bottom: 20px;	
+	align-self: flex-start;
 }
 @media (max-width: 730px) {
 	.restorans-container {
@@ -442,7 +458,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		max-width: 80%;
+		width: 98%;
 		margin: 0 auto;
 	} 
 	.restorans-card {
@@ -451,20 +467,23 @@
 	} 	
 }
 .restorans__button {
-	width: 90%;
+	width: 100%;
 	margin: 39px auto 0;
 	padding: 15px;
 }
 .restorans__button-text {
-	font-size: 14px;		
+	font-size: 16px;		
 }
 .delivery {
 	margin: 26px auto 0;
 	max-width: 768px;
 	padding: 0 11px;
 }
+.delivery-title__link {
+	font-size: 20px;
+}
 .delivery p {
-	font-size: 16px;	
+	font-size: 18px;	
 }
 
 #more {display: none;} /*скрытие текста*/
@@ -483,11 +502,12 @@
 	padding-bottom: 15px;
 }
 .footer {
-	width: 310px;	
-	padding: 0 0 0 15px;
+	max-width: 768px;	
+	padding: 0 0 0 8px;
 }
 .footer__logo {
 	margin-top: 20px;
+	
 }
 .footer__logo img{
 	width: 105px;

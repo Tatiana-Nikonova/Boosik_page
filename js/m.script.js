@@ -104,11 +104,11 @@ $(document).ready(function() {
 // Изменение шапки при скролле
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
-    if( scrolled > 120 ) {
+    if( scrolled > 200 ) {
         $('.content,.header-scroll').addClass('scrolled');
 
     }   
-    if( scrolled <= 120 ) {     
+    if( scrolled <= 200 ) {     
         $('.content,.header-scroll').removeClass('scrolled');
     }
 });
