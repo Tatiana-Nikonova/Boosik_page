@@ -502,7 +502,8 @@
 	padding-bottom: 15px;
 }
 .footer {
-	max-width: 768px;	
+	max-width: 300px;	
+	margin: 0 auto;
 	padding: 0 0 0 8px;
 }
 .footer__logo {
