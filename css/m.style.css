@@ -646,15 +646,13 @@ li.dropdown {display:block;}
 	margin: 0 auto 1em;
 	position: relative;
 }
-.popap__adress::before,
+
 .form-popap::after {
 	content: "";
 	position: absolute;	
 	z-index: 10;
 }
-.popap__adress::before {
-	background: url('../images/icon/point-blue.svg') left top / 12px 18px no-repeat;
-}
+
 .form-popap::after  {
 	width: 277px;
 	height: 1.5px;
@@ -684,13 +682,27 @@ li.dropdown {display:block;}
 	line-height: 13.2px;
 	cursor: pointer;
 }
-.popap__button:hover {
+.popap__button:hover,
+.restorans__button:hover {
 	box-shadow: 1px 1px 5px #000;
 }
-.popap__button:active {
+.Google_play-image:hover,
+.App_Store-image:hover {
+	box-shadow: 1px 1px 5px #fff;
+	border-radius: 30px;
+}
+.popap__button:active,
+.restorans__button:active {
 	position: relative;
 	top: 2px;
 	box-shadow: 1px 1px 5px #000;
+}
+.Google_play-image:active,
+.App_Store-image:active {
+	position: relative;
+	top: 2px;
+	box-shadow: 1px 1px 5px #fff;
+	border-radius: 30px;
 }
 
 
