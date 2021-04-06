@@ -183,7 +183,23 @@
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
 	position: relative;
 	top: 2px;
-	transform: scale(1.5);
+	transform: scale(1.1);
+	transition: transform .4s;
+}
+
+.head__search-adress.second-adress {
+	max-width: 200px;
+	min-width: 200px;
+	margin: -20px 0 20px 8px;
+	border-radius: 30px;
+	background-color: #5BC1CF;		
+	transition: all 0.8s ease 0s;
+}
+.head__search-adress.second-adress:hover {
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+	position: relative;
+	top: 2px;
+	transform: scale(1.1);
 	transition: transform .4s;
 }
 .header__clock {
@@ -233,6 +249,8 @@
 .category .slick-arrow.slick-next::before {
 	background: rgba(227, 227, 227, 0.5) url('../images/icon/arrow-black-next.svg') center / 16px 24px no-repeat;
 }
+
+
 
 
 @media (max-width: 768px) {
@@ -384,8 +402,14 @@
 	font-size: 12.19px;
 	margin-left: 8px; 
 }
-
-
+.slider-cathegory__item:hover {
+	background-color: #5BC1CF;
+	transition: all 0.3s ease 0s;
+}
+.category-scroll {
+	margin: -22px 0 10px 0;
+	padding: 0 0 10px 0;
+}
 
 .restorans-container {
 	max-width: 650px;
@@ -427,8 +451,8 @@
 	} 	
 }
 .restorans__button {
-	width: 303px;
-	margin: 39px 0 0 0;
+	width: 90%;
+	margin: 39px auto 0;
 	padding: 15px;
 }
 .restorans__button-text {

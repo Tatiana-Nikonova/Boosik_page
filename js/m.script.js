@@ -1,24 +1,35 @@
 // Слайдеры
 $(document).ready(function() {
 	$('.slider').slick({
-		arrows:true,
-		adaptiveHeight:true,
-		slidesToShow:3,
-		variableWidth:true,
-		speed:300,
-		waitForAnimate:false,
-		easing:'ease',
-		touchTreshhold:10
+		arrows: true,
+		adaptiveHeight: true,
+		slidesToShow: 3,
+		variableWidth: true,
+		speed: 300,
+		waitForAnimate: true,
+		easing: 'ease',
+		infinite: true,
+		swipe: true,
+		draggable: true,
+		touchMove: true,
+		touchThreshold: 100,
+		swipeToSlide: true,
 	});
 	
 	$('.category').slick({
-		arrows:true,
-		slidesToShow:6,
-		variableWidth:true,
-		speed:300,
-		waitForAnimate:false,
-		easing:'ease',
-		touchTreshhold:10
+		arrows: true,
+		adaptiveHeight: true,
+		slidesToShow: 6,
+		variableWidth: true,
+		speed: 300,
+		waitForAnimate: true,
+		easing: 'ease',
+		touchTreshhold: 100,
+		infinite: true,
+		swipe: true,
+		draggable: true,
+		touchMove: true,
+		swipeToSlide: true,
 	});
 	
 });
@@ -93,11 +104,11 @@ $(document).ready(function() {
 // Изменение шапки при скролле
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
-    if( scrolled > 60 ) {
+    if( scrolled > 120 ) {
         $('.content,.header-scroll').addClass('scrolled');
 
     }   
-    if( scrolled <= 60 ) {     
+    if( scrolled <= 120 ) {     
         $('.content,.header-scroll').removeClass('scrolled');
     }
 });
