@@ -77,7 +77,7 @@
 					</div>
 					
 
-					<div class="header-scroll">
+					<div id="header" class="header-scroll">
 						
 
 						<div class="header-flex">				
@@ -136,9 +136,10 @@
 							<form class="head__search-adress" action="#" method="get">
 								<label for="">	
 									<span class="delivery-address">Укажите адрес</span>						
-									<input class="search-adress" type="search" placeholder="Укажите адрес">
+									<a href="#popap"><input class="search-adress" type="search" placeholder="Укажите адрес"></a>
 								</label>							
 							</form>
+							
 
 							<div class="header__clock"><a href="#0"><img src="../images/icon/clock.svg" alt=""></a></div>		
 						</div>
@@ -215,7 +216,7 @@
 								<form class="head__search-adress second-adress" action="#" method="get">
 								<label for="">	
 									<span class="delivery-address">Укажите адрес</span>						
-									<input class="search-adress too-adress" type="search" placeholder="Укажите адрес">
+									<a href="#popap"><input class="search-adress" type="search" placeholder="Укажите адрес"></a>
 								</label>							
 							</form>
 							</div>
@@ -708,6 +709,24 @@
 	</div>
 	
 
+
+<div id="popap" class="popap">
+	<a href="#header" class="popap__area"></a>
+	<div class="popap__body">
+		<div class="popap__content">
+			<a href="#header" class="popap__close">X</a>
+			<form class="form-popap" action="#" method="get">
+				<input class="popap__adress" placeholder="Вишневая ул., 10, стр. 2"> 
+			</form>
+			
+			<div class="popap__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d325515.6816770886!2d30.252499514004878!3d50.40213674681354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JrQuNC10LI!5e0!3m2!1sru!2sby!4v1617709272162!5m2!1sru!2sby" max-width="100%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div class="popap__button">Доставить сюда</div>
+
+		</div>
+	</div>
+</div>
 
 
 	
