@@ -6,22 +6,31 @@ $(document).ready(function() {
 		slidesToShow:3,
 		slidesToScroll:3,
 		variableWidth:true,
-		speed:1000,
-		waitForAnimate:false,
-		easing:'ease',
-		touchTreshhold:15,
-		centerMode:true
+		speed:300,
+		waitForAnimate: true,
+		easing: 'ease',
+		infinite: true,
+		swipe: true,
+		draggable: true,
+		touchMove: true,
+		touchThreshold: 100,
+		swipeToSlide: true
 	});
 	
 	$('.category').slick({
 		arrows:true,
+		adaptiveHeight: true,
 		slidesToShow:6,
-		slidesToScroll:1,
-		variableWidth:true,
-		speed:1000,
-		waitForAnimate:false,
-		easing:'ease',
-		touchTreshhold:10
+		variableWidth: true,
+		speed: 300,
+		waitForAnimate: true,
+		easing: 'ease',
+		touchTreshhold: 100,
+		infinite: true,
+		swipe: true,
+		draggable: true,
+		touchMove: true,
+		swipeToSlide: true
 	});
 	
 });
@@ -81,6 +90,56 @@ $(document).ready(function() {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
+
+
+// Меню-бургер
+$(document).ready(function() {
+	$('.menu-burger').click(function(event) {
+		$('.menu-burger,.header__menu').toggleClass('active');
+		$('.body').toggleClass('lock');
+	});
+});
+
+
+
+// Изменение шапки при скролле
+$(window).on("scroll", function () {
+    var scrolled = $(this).scrollTop();
+    if( scrolled > 200 ) {
+        $('.content,.header-scroll').addClass('scrolled');
+
+    }   
+    if( scrolled <= 200 ) {     
+        $('.content,.header-scroll').removeClass('scrolled');
+    }
+});
+
+
+$('li.dropdown').click(function() {
+    $(this).nextUntil('li.dropdown').slideToggle('slow');
+});
+
+
+
+
+
+
+ // скрытие текста
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Читать больше"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Читать меньше"; 
+    moreText.style.display = "inline";
+  }
+}     // скрытие текста - end
 
 
 
