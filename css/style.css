@@ -645,9 +645,9 @@ address {
 	text-align: left;
 }
 	.restorans-title {
-		text-align: center;
+		text-align: left;
 	}
-}
+
 
 .restorans-cards {
 	margin-top: 28px;
@@ -1064,7 +1064,7 @@ address {
 	.header-grid {
 		display: none;
 	}
-	.head__search-adress.second-adress{
+	.head__search-adress.second-adress {
 		display: block;
 	}
 
@@ -1471,8 +1471,7 @@ address {
 		font-size: 18px;
 		text-align: left;
 	}
-	.restorans-cards {
-		width: 100%;
+	.restorans-cards {		
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
