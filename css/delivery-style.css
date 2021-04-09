@@ -1,20 +1,27 @@
-.page-content {
+
+.wrap {	
+	width: 100%;
+	font-family: 'Lato', 'Arial', sans-serif;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .header-container {
     position: relative;
-    
+    box-shadow: 5px 5px 30px rgba(112, 112, 112, 0.1);
 }
 
+
 .main-content {
-	padding-top: 15px;
+	padding: 15px;
+	width: 100%;
+	max-width: 1170px;
 	padding-bottom: 64px;
 	background-color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
-	max-width: 1170px;
+	justify-content: center;
 	margin: 0 auto;
 }
 
@@ -31,13 +38,9 @@
 
 
 .description {
-
-	width: 195px;
-	height: 60px;
+	width: 98%;
 	margin-top: 70px;
 	margin-bottom: 49px;
-	font-family: Lato;
-	font-style: normal;
 	font-weight: bold;
 	font-size: 42px;
 	line-height: 144%;
@@ -50,9 +53,6 @@
 
 
 .boosik-header , .restaurant-header {
-	font-family: Lato;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 30px;
 	line-height: 144%;
 	color: #1F1F1F;
@@ -66,13 +66,9 @@
 
 
 .boosik-description, .restaurant-description {
-	font-family: Lato;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 24px;
 	line-height: 144%;
-	width: 1170px;
-	height: 140px;
+	max-width: 1170px;
 	letter-spacing: -0.01em;
 	color: #1F1F1F;
 }
@@ -107,7 +103,7 @@
 	vertical-align: bottom; 
 	margin-right: 23px;
 }
-.own-delivery , .boosik-sence {
+.own-delivery, .boosik-sence {
 	display: flex;
 	flex-direction: column;
 }
@@ -124,4 +120,77 @@
 	display: flex;
 	flex-direction: column;
 	vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+	
+	.boosik-description, .restaurant-description {
+		font-size: 18px;
+	}
+	.boosik-header, .restaurant-header {
+		font-size: 24px;
+		font-weight: 700;	
+	}
+	.header {    
+	    position: relative;
+	    top: 0;
+	    left: 0;	
+	}
+	.deliver-img::before {
+		width: 48px;
+		height: 65.84px;
+		background-size: contain; 
+		margin-right: 20px;
+	}
+	.car-img::before {	
+		width: 89px;
+		height: 41.91px;
+		background-size: contain;
+		margin-right: 20px; 	
+	}
+	.boosik-header {
+		margin-bottom: 10px;
+	}
+	.description {
+		margin: 37px 0 35px 0;
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-flex {
+		margin: 0 0 -22px 0;
+	}
+	.boosik-description, .restaurant-description {
+		font-size: 14px;
+	}
+	.boosik-header, .restaurant-header {
+		font-size: 18px;
+		font-weight: 700;
+		margin: 0 0 16px 0;
+	}
+	.header {    
+	    position: relative;
+	    top: 0;
+	    left: 0;	
+	}
+	.description {
+		margin: 12px 0 18px 0;
+		font-size: 24px;
+	}
+	.boosik-header {
+		margin-bottom: 10px;
+	}
+	.deliver-img::before {
+		width: 35.72px;
+		height: 49px;
+		background-size: contain; 
+		margin-right: 10px;
+	}
+	.car-img::before {	
+		width: 57.34px;
+		height: 27px;
+		background-size: contain; 
+		margin-right: -15px;	
+	}
 }
