@@ -1,182 +1,224 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<link rel="stylesheet" type="text/css" href="../css/delivery-style.css">
-	<link rel="stylesheet" type="text/css" href="../css/null.css">
-	<link rel="stylesheet" href="../css/style.css">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/delivery-style.css">
+
 	<title>Доставка</title>
+	
+	
+	 
 	
 </head>
 <body>
-	<div class="page-content">
-	 	<div class="header-container">
-			<header class="header">
-				<div class="header-grid">
-					<div class="header__logo">
-						<a href="index.html"><img src="../images/icon/boosik_logo.png" alt="Логотип Boosik"></a>
-					</div>
-					<div class="custom-select" style="width:140px;">
-	  					<form class="header__select" action="#" method="get">
-							<select name="header__town" id="">
-	 							<option value="Киев" selected><span>Киев</span></option>
-	 							<option value="Киев"><span>Киев</span></option>
-								<option value="Вышгород"><span>Вышгород</span></option>
-								<option value="Ирпень"><span>Ирпень</span></option>
-								<option value="Бровары"><span>Бровары</span></option>
-								<option value="Борисполь"><span>Борисполь</span></option>
-								<option value="Львов"><span>Львов</span></option>
-								<option value="Ивано-Франковск"><span>Ивано-Франковск</span></option>
-								<option value="Луцк"><span>Луцк</span></option>
-								<option value="Тернополь"><span>Тернополь</span></option>
-								<option value="Черновцы"><span>Черновцы</span></option>
-								<option value="Ровно">Ровно</option>
-								<option value="Хмельницкий">Хмельницкий</option>
-								<option value="Винница">Винница</option>
-								<option value="Житомир">Житомир</option>
-								<option value="Одесса">Одесса</option>
-								<option value="Черкассы">Черкассы</option>
-								<option value="Кропивницкий">Кропивницкий</option>
-								<option value="Кривой Рог">Кривой Рог</option>
-								<option value="Николаев">Николаев</option>
-								<option value="Херсон">Херсон</option>
-								<option value="Полтава">Полтава</option>
-								<option value="Сумы ">Сумы </option>
-								<option value="Днепр">Днепр</option>
-								<option value="Запорожье">Запорожье</option>
-								<option value="Харьков">Харьков</option>
-	  						</select>
-						</form>
-					</div>				
+	<div class="wraper">
+		<div class="wrap">
+			<div class="header-container">		
 							
+				<header class="header">
+					<div class="header-grid">
+						<div class="header__logo">
+							<div class="logo-flex">
+								<a href="../index.html"><img src="../images/icon/boosik_logo.png" alt="Логотип Boosik"></a>
+							</div>
+						</div>
 
-					<form class="header__search-adress" action="#" method="get">
-						<label for="">	
-							<span class="delivery-address">Адрес доставки</span>						
-							<input class="search-adress" type="search" placeholder="Адрес доставки">
-						</label>							
-					</form>
+						<div class="custom-select" style="width:140px;">
+		  					<form class="header__select" action="#" method="get">
+								<select name="header__town" id="">
+		 							<option value="Киев" selected><span>Киев</span></option>
+		 							<option value="Киев"><span>Киев</span></option>
+									<option value="Вышгород"><span>Вышгород</span></option>
+									<option value="Ирпень"><span>Ирпень</span></option>
+									<option value="Бровары"><span>Бровары</span></option>
+									<option value="Борисполь"><span>Борисполь</span></option>
+									<option value="Львов"><span>Львов</span></option>
+									<option value="Ивано-Франковск"><span>Ивано-Франковск</span></option>
+									<option value="Луцк"><span>Луцк</span></option>
+									<option value="Тернополь"><span>Тернополь</span></option>
+									<option value="Черновцы"><span>Черновцы</span></option>
+									<option value="Ровно">Ровно</option>
+									<option value="Хмельницкий">Хмельницкий</option>
+									<option value="Винница">Винница</option>
+									<option value="Житомир">Житомир</option>
+									<option value="Одесса">Одесса</option>
+									<option value="Черкассы">Черкассы</option>
+									<option value="Кропивницкий">Кропивницкий</option>
+									<option value="Кривой Рог">Кривой Рог</option>
+									<option value="Николаев">Николаев</option>
+									<option value="Херсон">Херсон</option>
+									<option value="Полтава">Полтава</option>
+									<option value="Сумы ">Сумы </option>
+									<option value="Днепр">Днепр</option>
+									<option value="Запорожье">Запорожье</option>
+									<option value="Харьков">Харьков</option>
+		  						</select>
+							</form>
+						</div>				
+								
 
-					<div class="header__clock"><a href="#0"><img src="../images/icon/clock.svg" alt=""></a></div>
+						<form class="header__search-adress" action="#" method="get">
+							<label for="">	
+								<span class="delivery-address">Адрес доставки</span>						
+								<input class="search-adress" type="search" placeholder="Адрес доставки">
+							</label>							
+						</form>
 
-					<ul class="header__menu">							
-							<li class="menu__item"><a href="#0">Ресторанам</a></li>
-							<li class="menu__item"><a href="#0">Курьерам</a></li>
-					</ul>						
+						<div class="header__clock"><a href="#0"><img src="images/icon/clock.svg" alt=""></a></div>
+
+						<ul class="header__items">							
+								<li class="menu__item"><a href="index/restaurants.html">Ресторанам</a></li>
+								<li class="menu__item"><a href="index/couriers.html">Курьерам</a></li>
+						</ul>						
 
 					
-					<ul class="header__user">
-						<li class="item-user"><a href="#0"><span class="user-text">Кабинет покупателя</span></a></li>
-						<li class="item-basket"><a href="#0"><span class="user-text">Корзина</span></a></li><span class="num-basket">5</span>
-					</ul>					
-				</div>	
-			</header>
+						<ul class="header__user">
+							<li class="item-user"><a href="#0"><span class="user-text">Кабинет покупателя</span></a></li>
+							<li class="item-basket"><a href="#0"><span class="user-text">Корзина</span></a></li><span class="num-basket">5</span>
+						</ul>					
+					</div>
+
+					<div class="header-flex">											
+						<div class="menu-burger">
+							<span></span>
+						</div>	
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="" class="header__link">Киев</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Ресторанам</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Курьерам</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Личный кабинет</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header-logo">
+							<div class="logo-flex">
+								<a href="../index.html"><img src="../images/icon/boosik_logo.png" class="logo-image" alt="Логотип Boosik"></a>
+							</div>
+						</div>
+
+						<div class="item-user"><a href="#0"><span class="user-text">Кабинет покупателя</span></a></div>
+					</div>									
+				</header>
+				
+			</div>
+	 	
+
+			<main class="main-content">			
+				<div class="delivery-link">
+					<span>
+						<a class="link" href="../index.html">Главная/</a> 
+						<a class="link" href="#">Доставка</a>
+					</span>
+				</div>
+
+				<div class="description">
+					<h1>Описание</h1>
+				</div>
+
+
+				<div class="boosik-sence">
+					<div class="boosik-header">	
+						<h2 class="deliver-img">Доставка boosik</h2>
+					</div>
+					<div class="boosik-description">
+						<span class="boosik-description">Доставка boosik- сервис доставляет еду из большого количества ресторанов курьерами boosik. Доставка занимает в среднем 40-50 мин., а оплатить можно как наличными при получении заказа, так и безналичной оплатой карточкой банка или накопленными бонусами. Курьер доставляет заказ в термосумке- это значит, что ваше горячее блюдо не остынет, а холодный напиток останется холодным.</span>
+					</div>
+				</div>
+
+				<div class="own-delivery">
+					<div class="restaurant-header">	
+						<h2 class="car-img">Собственная доставка ресторана</h2>
+					</div>
+					<div class="restaurant-description">
+						<span>Доставка ресторана- некоторые рестораны доставляют заказы своими курьерами и самостоятельно устанавливают параметры доставки: минимальную сумму заказа, платную/бесплатную доставку.  Boosik доверяет ресторанам с собственной доставкой и помогает им зарабатывать больше на доставке еды.</span>
+					</div>
+				</div>
+			</main>
+
+			<div class="footer-container">
+			<footer class="footer">
+				<div class="footer__logo">
+					<a href="../index.html"><img src="../images/icon/boosik_logo.png" alt="Логотип Boosik"></a>
+				</div>
+					<div class="footer-town__colomns">
+						<div class="footer-town__colomn">
+							<h3 class="footer-town__title">Города</h3>
+							<ul>
+								<li><a class="footer-town" href="">Киев</a></li>
+								<li><a class="footer-town" href="">Вышгород</a></li>
+								<li><a class="footer-town" href="">Ирпень</a></li>
+								<li><a class="footer-town" href="">Бровары</a></li>
+								<li><a class="footer-town" href="">Борисполь</a></li>
+								<li><a class="footer-town town-all" href="">Показать все</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-town__colomn">
+							<h3 class="footer-town__title">Кухни и Блюда</h3>
+							<ul>
+								<li><a class="footer-town" href="">Суши</a></li>
+								<li><a class="footer-town" href="">Пицца</a></li>
+								<li><a class="footer-town" href="">Бургеры</a></li>
+								<li><a class="footer-town" href="">Бровары</a></li>
+								<li><a class="footer-town" href="">Домашняя</a></li>
+								<li><a class="footer-town" href="">Фастфуд</a></li>
+								<li><a class="footer-town town-all" href="">Показать все</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-town__colomn">
+							<h3 class="footer-town__title">Информация</h3>
+							<ul>
+								<li><a class="footer-town" href="">О компании</a></li>
+								<li><a class="footer-town" href="#0">Доставка</a></li>
+								<li><a class="footer-town" href="../index/restaurants.html">Добавить ресторан</a></li>
+								<li><a class="footer-town" href="../index/couriers.html">Курьерам</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-town__colomn">
+							<h3 class="footer-town__title">Связаться с нами</h3>
+							<ul>
+								<li><a class="footer-town footer-address" href="">info@boosik.com</a></li>
+							</ul>
+							<div class="soc-icons">
+								<a href="#0"><img src="../images/icon/instagram.svg" class="soc-icon instagram" alt=""></a>
+								<a href="#0"><img src="../images/icon/facebook.svg" class="soc-icon facebook" alt=""></a>
+							</div>
+							<ul class="banner-but width-992">
+								<li><a class="footer-town Google_play w-992" href="#0"><img src="../images/icon/Google_play.svg" alt=""></a></li>								
+							</ul>
+							<ul>
+								<li><a class="footer-town App_Store w-992" href="#0"><img src="../images/icon/App_Store.svg" alt=""></a></li>								
+							</ul>
+						</div>
+
+						<div class="footer-town__colomn colomn-last">
+							<ul class="banner-but">
+								<li><a class="footer-town Google_play w-1170" href="#0"><img src="../images/icon/Google_play.svg" alt=""></a></li>								
+							</ul>
+							<ul>
+								<li><a class="footer-town App_Store w-1170" href="#0"><img src="../images/icon/App_Store.svg" alt=""></a></li>								
+							</ul>
+						</div>
+					</div>
+			</footer>						
 		</div>
 
-		<main class="main-content">
 		
-			<div class="delivery-link">
-				<span>
-					<a class="link" href="../index.html">Главная/</a> 
-					<a class="link" href="#">Доставка</a>
-				</span>
-			</div>
-
-			<div class="description">
-				<h1>Описание</h1>
-			</div>
-
-
-			<div class="boosik-sence">
-				<div class="boosik-header">	
-					<h2 class="deliver-img">Доставка boosik</h2>
-				</div>
-				<div class="boosik-description">
-					<span class="boosik-description">Доставка boosik- сервис доставляет еду из большого количества ресторанов курьерами boosik. Доставка занимает в среднем 40-50 мин., а оплатить можно как наличными при получении заказа, так и безналичной оплатой карточкой банка или накопленными бонусами. Курьер доставляет заказ в термосумке- это значит, что ваше горячее блюдо не остынет, а холодный напиток останется холодным.</span>
-				</div>
-			</div>
-
-			<div class="own-delivery">
-				<div class="restaurant-header">	
-					<h2 class="car-img">Собственная доставка ресторана</h2>
-				</div>
-				<div class="restaurant-description">
-					<span>Доставка ресторана- некоторые рестораны доставляют заказы своими курьерами и самостоятельно устанавливают параметры доставки: минимальную сумму заказа, платную/бесплатную доставку.  Boosik доверяет ресторанам с собственной доставкой и помогает им зарабатывать больше на доставке еды.</span>
-				</div>
-			</div>
-		</main>
-
-
-		<footer class="footer-container">
-		<div class="footer">
-			<div class="footer__logo">
-				<a href="index.html"><img src="../images/icon/boosik_logo.png" alt="Логотип Boosik"></a>
-			</div>
-				<div class="footer-town__colomns">
-					<div class="footer-town__colomn">
-						<h3 class="footer-town__title">Города</h3>
-						<ul>
-							<li><a class="footer-town" href="">Киев</a></li>
-							<li><a class="footer-town" href="">Вышгород</a></li>
-							<li><a class="footer-town" href="">Ирпень</a></li>
-							<li><a class="footer-town" href="">Бровары</a></li>
-							<li><a class="footer-town" href="">Борисполь</a></li>
-							<li><a class="footer-town town-all" href="">Показать все</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-town__colomn">
-						<h3 class="footer-town__title">Кухни и Блюда</h3>
-						<ul>
-							<li><a class="footer-town" href="">Суши</a></li>
-							<li><a class="footer-town" href="">Пицца</a></li>
-							<li><a class="footer-town" href="">Бургеры</a></li>
-							<li><a class="footer-town" href="">Бровары</a></li>
-							<li><a class="footer-town" href="">Домашняя</a></li>
-							<li><a class="footer-town" href="">Фастфуд</a></li>
-							<li><a class="footer-town town-all" href="">Показать все</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-town__colomn">
-						<h3 class="footer-town__title">Информация</h3>
-						<ul>
-							<li><a class="footer-town" href="">О компании</a></li>
-							<li><a class="footer-town" href="index/Delivery_Loptop.html">Доставка</a></li>
-							<li><a class="footer-town" href="">Добавить ресторан</a></li>
-							<li><a class="footer-town" href="">Курьерам</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-town__colomn">
-						<h3 class="footer-town__title">Связаться с нами</h3>
-						<ul>
-							<li><a class="footer-town footer-address" href="">info@boosik.com</a></li>
-						</ul>
-						<div class="soc-icons">
-							<a href="#0"><img src="../images/icon/instagram.svg" class="soc-icon instagram" alt=""></a>
-							<a href="#0"><img src="../images/icon/facebook.svg" class="soc-icon facebook" alt=""></a>
-						</div>
-						<ul class="banner-but width-992">
-							<li><a class="footer-town Google_play w-992" href="#0"><img src="../images/icon/Google_play.svg" alt=""></a></li>								
-						</ul>
-						<ul>
-							<li><a class="footer-town App_Store w-992" href="#0"><img src="../images/icon/App_Store.svg" alt=""></a></li>								
-						</ul>
-					</div>
-
-					<div class="footer-town__colomn colomn-last">
-						<ul class="banner-but">
-							<li><a class="footer-town Google_play w-1170" href="#0"><img src="../images/icon/Google_play.svg" alt=""></a></li>								
-						</ul>
-						<ul>
-							<li><a class="footer-town App_Store w-1170" href="#0"><img src="../images/icon/App_Store.svg" alt=""></a></li>								
-						</ul>
-					</div>
-				</div>
-		</div>						
-		</footer>
+		</div>
 	</div>
 
 
