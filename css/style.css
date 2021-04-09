@@ -77,7 +77,7 @@ html {overflow-x: hidden;}
   position: relative;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 18px;
-  margin-top: 6+px;
+  margin-top: 6px;
 }
 
 .custom-select select {
@@ -847,6 +847,21 @@ address {
 	margin-top: 18px;
 }
 
+li:nth-child(n+6) {display:none;}
+li.dropdown {display:block;}
+
+.footer-town,
+.dropdown {
+	margin-top: 9px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #C5C5C4;	
+}
+.dropdown {
+	font-style: italic;
+	font-weight: 400;
+}
+
 
 .copyright {
 	display: flex;
@@ -1058,7 +1073,7 @@ address {
 		min-height: 65.41px;
 		top: -20px;
 		left: 0;
-		z-index: 10;	
+		z-index: 5;	
 		transition: all 0.3s ease 0s;
 	}
 	.header-grid {
@@ -1108,21 +1123,21 @@ address {
 		left: 0;
 		background-color: #fff;
 		box-shadow: 5px 5px 30px rgba(112, 112, 112, 0.1);
-		z-index: 3;
+		z-index: 4;
 	}
 
 	.header-logo {
 		width: 67px;
 		height: 19px;
 		position: relative;	
-		z-index: 	5;
+		z-index: 	15;
 		transition: all 0.3s ease 0s;
 	}
 	.item-user {
 		width: 24.92px;
 		height: 24.92px;
 		position: relative;	
-		z-index: 	5;
+		z-index: 	4;
 		transition: all 0.3s ease 0s;
 	}
 	.item-user:hover,
@@ -1137,6 +1152,10 @@ address {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		z-index: 5;
+	}
+	.header-menu.active {
+		z-index: 5;
 	}
 	.header__list {
 		display: flex;
@@ -1154,7 +1173,9 @@ address {
 		width: 19px;
 		height: 16px;
 		transition: all 0.3s ease 0s;
+		z-index: 30;
 	}
+
 	.menu-burger::before,
 	.menu-burger::after {
 		content: "";
@@ -1184,6 +1205,7 @@ address {
 		content: "";
 		transform: rotate(45deg);
 		top: 6px;
+		
 	}
 	.menu-burger.active::after {
 		content: "";
@@ -1202,6 +1224,7 @@ address {
 		height: 100%;
 		background-color: #fff;
 		transition: all 0.3s ease 0s;
+		z-index: 5;
 	}
 
 
@@ -1212,6 +1235,11 @@ address {
 		border-radius: 30px;
 		background-color: #5BC1CF;		
 		transition: all 0.8s ease 0s;
+	}
+	.head__search-adress,
+	.header__clock {
+		position: relative;
+		z-index: 4;
 	}
 
 	.search-adress::-webkit-input-placeholder {color:#fff; font-size: 12px; text-align: center; line-height: 15.84px;}
@@ -1249,12 +1277,7 @@ address {
 	.header__clock {
 		margin: 0;
 	}
-	.head__search-adress,
-	.header__clock,
-	.menu-burger {
-		position: relative;
-		z-index: 5;
-	}
+	
 	.category-container { 
 		max-width: 768px;
 		margin: 30px 0;
@@ -1306,6 +1329,7 @@ address {
 	}
 	.header__menu.active {
 		top: 0;
+
 	}
 	
 	.header-logo {
@@ -1422,7 +1446,7 @@ address {
 		position: absolute;
 	    top: 9px;
 	    right: 16px;
-	    z-index: 4;
+	    z-index: 2;
 	    color: #5BC1CF;
 	    font-weight: 400;
 	    font-size: 18px;
@@ -1432,7 +1456,7 @@ address {
 		position: absolute;
 	    top: 1px;
 	    right: 16px;
-	    z-index: 4;
+	    z-index: 2;
 	    color: #5BC1CF;
 	    font-weight: 400;
 	    font-size: 18px;
