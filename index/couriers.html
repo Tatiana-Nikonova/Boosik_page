@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta charset="UTF-8">
 
 
 	
 	<link rel="stylesheet" type="text/css" href="../css/restaurants.css">	
-	<link rel="stylesheet" type="text/css" href="../css/couriers.css">	
+	<link rel="stylesheet" type="text/css" href="../css/couriers.css" media="(min-width:1025px)">	
+	<link rel="stylesheet" media="(max-width:1024px)" href="../css/t.couriers.css" >
+	<link rel="stylesheet" media="(max-width:768px)" href="../css/m.couriers.css" >
 	
 	<title>Курьерам</title>
 
-	<script type='text/javascript'>
-if(window.innerWidth<1025)
-    location.href='https://tatiana-nikonova.github.io/Boosik_page/index/t.couries.html';
-  if(window.innerWidth<769)
-    location.href='https://tatiana-nikonova.github.io/Boosik_page/index/m.couries.html';
-</script>
+	
 	
 </head>
 <body>
@@ -76,13 +73,13 @@ if(window.innerWidth<1025)
 							<div class="instruct-item item-002">
 								<img src="../images/icon/instruct-img-02.png" alt="">
 								<h3 class="item-title">Удобная локация</h3>
-								<p class="item-discription">Работайте в том районе где вам удобно</p>
+								<p class="item-discription">Работайте в том районе, где вам удобно</p>
 							</div>
 
 							<div class="instruct-item item-003">
 								<img src="../images/icon/instruct-img-03.svg" alt="">
 								<h3 class="item-title">Выбирайте день и время работы</h3>
-								<p class="item-discription">Доставляйте когда есть возможность</p>
+								<p class="item-discription">Доставляйте, когда есть возможность</p>
 							</div>
 
 							<div class="instruct-item item-004">
@@ -94,7 +91,7 @@ if(window.innerWidth<1025)
 							<div class="instruct-item item-005">
 								<img src="../images/icon/instruct-img-05.svg" alt="">
 								<h3 class="item-title">Нет ограничений по расстоянию</h3>
-								<p class="item-discription">Доставляйте туда куда захочет клиент и зарабатывайте на тарифе доставки</p>
+								<p class="item-discription">Доставляйте туда, куда захочет клиент и зарабатывайте на тарифе доставки</p>
 							</div>
 
 							<div class="instruct-item item-006">
@@ -113,8 +110,7 @@ if(window.innerWidth<1025)
 								<img src="../images/icon/instruct-img-08.svg" alt="">
 								<h3 class="item-title">Маршрут к ресторану и от ресторана к клиенту</h3>
 								<p class="item-discription">Удобство построения маршрута в google картах нажатием одной кнопки в приложениях boosik</p>
-							</div>
-							
+							</div> 							
 						</div>
 				   </div>
 				</section>				
@@ -150,11 +146,46 @@ if(window.innerWidth<1025)
 				</section>
 
 				<section class="banner-work">					
-					<h2 class="banner-work__title title-h2">
+					
+					<div class="banner-work__body">
+						<h2 class="banner-work__title title-h2">
 						Как устроена работа курьера?
-					</h2>	
-					<div class="banner-work__image">
-						<img src="../images/banner-couriers-blue1.png" alt="">
+						</h2>	
+						<div class="banner-work__grid">
+							
+							<div class="work-item work-item1">
+								
+								<p>Клиент делает заказ</p>
+							</div>
+							<div class="work-item work-item2">
+								
+								<p>Курьер <br> принимает заказ и <br> отправляется в ресторан</p>
+							</div>
+							<div class="work-item work-item3">
+								
+								<p>Ресторан получает уведомление о заказе <br> и готовит до <br> прибытия курьера</p>
+							</div>
+							<div class="work-item work-item6">
+								
+								<p>Клиент оплачивает заказ наличными или безналично, и сообщает «код получения» курьеру для завершения заказа</p>
+							</div>
+							<div class="work-item work-item5">
+								
+								<p>Курьер <br> доставляет заказ клиенту</p>
+							</div>
+							<div class="work-item work-item4">
+								
+								<p>Курьер оплачивает заказ в ресторане и делает фото чека</p>
+							</div>							
+						</div>
+						<div class="main-buttons">
+							<ul class="banner-buts banner-buts__white">
+								<li><a class="main__Google_play" href="#0"><img src="../images/icon/Google_play-white.svg" alt=""></a></li>								
+							</ul>
+							<ul>
+								<li><a class="main__App_Store App_Store__white" href="#0"><img src="../images/icon/App_Store-white.svg" alt=""></a></li>								
+							</ul>
+						</div>
 					</div>								
 				</section>
 

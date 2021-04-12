@@ -1,27 +1,3 @@
-/*Обнуление*/
-@import url(null.css);
-
-@font-face {
-	font-family: 'Lato';
-	src: url('../Fonts/LatoBold.eot');
-	src: local('☺'), url('../Fonts/LatoBold.woff') format('woff'), url('../Fonts/LatoBold.ttf') format('truetype'), url('../Fonts/LatoBold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('../Fonts/LatoRegular.eot');
-	src: local('☺'), url('../Fonts/LatoRegular.woff') format('woff'), url('../Fonts/LatoRegular.ttf') format('truetype'), url('../Fonts/LatoRegular.svg') format('svg');
-	font-weight: 400;
-	font-style: normal;
-}
-
-
-.wraper {
-	width: 100%;
-}
-
 .wrap {
 	max-width: 768px;	
 	margin: 0 auto;
@@ -44,11 +20,12 @@
 	width: 81px;
 	height: 23px;
 }
-.logo-image {
+.header-logo img {
 	max-width: 100%;
 }
+
 .main {
-	max-width: 480px; 
+	max-width: 768px; 
 	margin: 0 auto;	
 }
 .main-content {
@@ -84,48 +61,7 @@
 	background: url('../images/banner-couriers2.png') -210px 1px / cover no-repeat;
 	z-index: 3;
 }
-@media (max-width: 641px;) {
-	.main-banner {
-		max-width: 640px;
-	}
 
-}
-@media (max-width: 461px;) {
-	.main-banner {
-		max-width: 460px;
-	}
-
-}
-@media (max-width: 376px;) {
-	.main-banner {
-		max-width: 374px;
-	}
-
-}
-@media (max-width: 640px) {
-    .main-banner::after {
-        background: url('../images/banner-couriers4.png') no-repeat;
-        width: 100%;
-        height: 100%;
-        padding: 100px;
-    }
-}
-@media (max-width: 460px) {
-    .main-banner::after {
-        background: url('../images/banner-couriers5.png') no-repeat;
-        width: 100%;
-        height: 100%;
-        padding: 100px;
-    }
-}
-@media (max-width: 376px) {
-    .main-banner::after {
-        background: url('../images/banner-couriers3.png') no-repeat;
-        width: 100%;
-        height: 100%;
-        padding: 100px;
-    }
-}
 .banner-restaurans {	
 	position: relative;
 	color: #fff;
@@ -177,24 +113,25 @@
 
 .instruct-container{
 	margin-bottom: 0px;
+	width: 100%;
 }
 
 .instruct {
-	max-width: 480px;
+	width: 80%;
 	padding-top: 20px;
    margin: 0 auto;	
 }
 
-.instruct-items {
-	width: 255px;	
-	margin: 43px auto 0;
-	
+.instruct-items {	
+	width: 50%;
+	margin: 0 auto;	
 }
 .instruct__title {
 	padding-left: 23px;
 }
 
 .item-title {
+	width: 100%;
 	margin-top: 15px;
 	font-size: 18px;
 	font-weight: 600;
@@ -203,26 +140,37 @@
 }
 
 .instruct-item {
-	text-align: center;
-	margin-bottom: 30px;
-}
-.instruct-item img {
-	max-width: 131px;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
 
-.item-discript {
-	width: 290px;
-	margin-top: 16px;
-	margin-left: 0;
+.instruct-item img {
+	display: block;
+	width: 60%;
+	padding-left: 50px;	
+}
+.item-003 img,
+.item-005 img {
+	width: 50%;
+}
+
+
+.item-discription {
+	margin: 16px 0;
+	font-size: 16px;
 	line-height: 23.04px;
 	text-align: left;	
 }
-
-
+.instruct-item:nth-child(even) {
+    margin-top: 0;
+}
 
 
 .begin-container {
-	max-width: 373px;
+	max-width: 768px;
+	padding-bottom: 40px;
 	background: url('../images/fon-112.png') 29px 74px / 95% no-repeat;
 }
 .begin {
@@ -231,7 +179,7 @@
 }
 .begin-items {
 	position: relative;
-	width: 310px;
+	width: 70%;
 	margin: 0 auto 0;
 	padding-bottom: 0;	
 }
@@ -239,32 +187,33 @@
 .begin-items::before {
 	content: "";
    width: 3px;
-   height: 560px;
+   height: 525px;
    background-color: #5BC1CF;
    position: absolute;
    top: 24px;
    left: 11px;
    z-index: -4;
 }
-
-.begin-item {
-	width: 290px;
-	padding-right: 0;
+.begin-item:nth-child(even) {
+	margin-left: 0;
 }
+.begin-item {
+	display: block;
+	padding: 0;
+}
+.begin-item .item-discription {
+	margin-top: 0;
+	padding-left: 40px;
+}
+
 .begin__title {
-	width: 320px;
+	width: 70%;
 	padding: 11px 0 0 29px;
 	margin-right: 0;
 	font-size: 30px;
 	line-height: 43.2px;
 }
-.item-discription {
-	width: 200px;
-	margin: -9px 0 0 43px;
-	font-size: 16px;
-	color: #1F1F1F;
-	line-height: 23.04px;
-}
+
 .num {
 	width: 34px;
 	height: 34px;
@@ -272,30 +221,50 @@
    margin-right: 18px;
 }
 
-.item-0002 {margin-top: 36px;}
-.item-0003 {margin-top: 45px;}
-.item-0004 {margin-top: 16px;}
-.item-0005 {margin-top: 45px;}
+.features-title {
+	margin-top: 50px;
+}
 
 
 .banner-work {
-	margin-top: 17px;
-    background: url(../images/banner-couriers-blue.png) center / 146% no-repeat;
-    max-width: 480px;
-    min-height: 379px;
+	margin-top: 0;
+	max-width: 768px;
+	min-height: 498px;
+	background: none;	
+	background-color:  #5BC1CF;
+	color: #fff;	
+}
+.banner-work__title {
+	font-size: 30px;	
+	line-height: 43.2px;
+	margin-bottom: 100px;
+	margin-left: -3px;
+	margin-top: 0;
+}
+.banner-work__body {
+	position: relative;
+	width: 83%;
+	margin: 0 auto;
+	background: url('../images/Group 122.svg') 81px 117px / 82% no-repeat;
+}
+.banner-work__grid {
+	display: grid;
+	grid-template: repeat(2, 281px) / repeat(3, 1fr);
+}
+.work-item {
+	font-size: 14px;
+	line-height: 20.16px;
+	margin: 0px;
 }
 
-.banner-work__title {	
-	color: #fff;
-	padding: 31px 0 0 24px;	
-}
 
 
 .questions-container {
 	background-color: #fff;
+	width: 100%;
 }
 .questions {	
-	max-width: 480px;
+	width: 80%;
 	margin: 0 auto;	
 }
 
@@ -353,7 +322,7 @@
 
 .block__text {
 	margin: 17px 0 0 37px;
-	width: 302px;
+	width: 90%;
 	font-size: 14px;
 	line-height: 20.16px;
    padding: 0 2px 0 0;
@@ -364,13 +333,14 @@
 .popular-queries-container,
 .specify-container {
 	background-color: #FAFAFA;
+	width: 100%;
 }
 .popular-queries {
-	width: 320px;
+	width: 80%;
 	margin: 0 auto;
 }
 .specify {
-	width: 320px;
+	width: 80%;
 	margin: 0 auto;
 }
 .specify p {
@@ -405,7 +375,7 @@
 	
 }
 .queries__item {
-	width: 100%;
+	width: 99%;
 	margin-bottom: 15px;
 }
 .specify__item {
@@ -427,7 +397,7 @@
 
 
 .delivery {
-	width: 320px;
+	width: 90%;
 	margin: 0 auto 0;
 }
 .delivery-title {
@@ -441,8 +411,8 @@
 	color: #000;
 }
 .delivery p {
-	width: 345px;
-	margin-top: 9px;
+	width: 100%;
+	margin: 9px 0 20px 0;
 	font-size: 16px;
 	line-height: 23.04px;
 	color: #000;
@@ -456,7 +426,130 @@
 	color: #5bc1cf;
 }
 
+@media (max-width: 641px;) {
+	.main-banner {
+		max-width: 640px;
+	}
+}
+	
+@media (max-width: 461px;) {
+	.main-banner {
+		max-width: 460px;
+	}
+}
 
+@media (max-width: 376px;) {
+	.main-banner {
+		max-width: 374px;
+	}
+}
+
+
+
+@media (max-width: 640px) {
+   .main-banner::after {
+     background: url('../images/banner-couriers4.png') no-repeat;
+     width: 100%;
+     height: 100%;
+     padding: 100px;
+   }
+    .banner-work__grid {	
+		grid-template: repeat(2, 225px) / repeat(3, 1fr);
+	}
+	.begin-container {
+ 		padding-bottom: 0px;
+ 	}
+ 	.item-0005 {
+ 		margin: 30px 0 20px 0;
+ 	}
+}
+
+@media (max-width: 570px) {
+   .banner-work__grid {	
+		grid-template: repeat(2, 239px) / repeat(3, 1fr);
+	}
+	.banner-work__body {
+		width: 95%;
+		background: url('../images/Group 122.svg') 74px 124px / 84% no-repeat;
+	}	
+}
+
+@media (max-width: 485px) {
+   .banner-work__grid {	
+		grid-template: repeat(2, 209px) / repeat(3, 1fr);
+	}
+	.banner-work__body {
+		width: 90%;
+   	background: url('../images/Group 122.svg') 44px 136px / 87% no-repeat;
+	}	
+	.banner-work__grid {
+		width: 87%;
+		margin: 0 auto;
+	}
+	.instruct-item,
+	.item-title {	
+		width: 90%;		
+	}
+	.instruct-item img {
+		display: block;
+		width: 50%;
+		padding-left: 50px;	
+	}
+	.item-003 img,
+	.item-005 img {
+		width: 40%;
+	}
+	.instruct {
+		width: 100%;
+	}
+	.instruct-items {
+		width: 80%;
+	}
+	.specify__item {
+		width: 24%;
+	}
+	.item-discription {
+		width: 100%;
+	}
+	.work-item {
+	font-size: 12px;
+	line-height: 17.28px;	
+	}
+}
+
+@media (max-width: 467px) {
+	.banner-work__body {
+   	background: url('../images/Group 122.svg') 44px 177px / 87% no-repeat;
+	}
+}
+@media (max-width: 400px) {
+	.banner-work__grid {	
+		grid-template: repeat(2, 165px) / repeat(3, 1fr);
+	}
+}
+@media (max-width: 390px) {
+	.banner-work__grid {
+		width: 97%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 460px) {
+    .main-banner::after {
+        background: url('../images/banner-couriers5.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+    }
+}
+@media (max-width: 376px) {
+    .main-banner::after {
+        background: url('../images/banner-couriers3.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+    }
+}
 
 
 
