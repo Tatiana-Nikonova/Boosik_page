@@ -466,6 +466,13 @@
 	color: #5bc1cf;
 }
 
+#more {display: none;} /*скрытие текста*/
+
+
+.etc-link {
+	background-color: #fff;
+}
+
 
 
 

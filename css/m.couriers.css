@@ -522,6 +522,42 @@
    	background: url('../images/Group 122.svg') 44px 177px / 87% no-repeat;
 	}
 }
+@media (max-width: 466px) {
+	.begin-items::before {
+   	height: 574px;
+	}
+}
+@media (max-width: 454px) {
+	.begin-items::before {
+   	height: 624px;
+	}
+	.specify p {
+	width: 90%;
+	}
+	.main-buttons  {
+		display: block;
+	}
+}
+@media (max-width: 349px) {
+	.begin-items::before {
+   	height: 669px;
+	}
+	.features-title {
+		font-size: 16px;
+	}
+	.begin-item {
+		width: 100%;
+	}
+	.title-h2 {
+		font-size: 24px;
+	}
+	.block-title {
+		font-size: 14px;
+	}
+	.banner-work__body {
+    	background: url('../images/Group 122.svg') 34px 204px / 87% no-repeat;
+	}
+}
 @media (max-width: 400px) {
 	.banner-work__grid {	
 		grid-template: repeat(2, 165px) / repeat(3, 1fr);
